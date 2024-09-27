@@ -600,7 +600,7 @@ const HomePage = () => {
                   </div>
                 </div>
                 <div className="row">
-                  <div className="col-12">
+                  <div className="col-6">
                     <div className=" arrow-style-1 arrow-over">
                       <div className="swiper-container slider-homes">
                         <div className="swiper-wrapper">
@@ -697,186 +697,17 @@ const HomePage = () => {
                               </div>
                             </div>
                           </div>
-                          <div className="swiper-slide">
-                            <div
-                              className="box-dream wow fadeInUp"
-                              data-wow-delay="0.2s"
-                            >
-                              <div className="image">
-                                <div className="list-tags">
-                                  <a href="#" className="tags-item for-sell">
-                                    FOR SELL
-                                  </a>
-                                </div>
-                                <div className="button-heart">
-                                  <i className="flaticon-heart-1" />
-                                </div>
-                                <div className="swiper-container slider-box-dream arrow-style-1 pagination-style-1">
-                                  <div className="swiper-wrapper">
-                                    <div className="swiper-slide">
-                                      <div className="w-full">
-                                        <img
-                                          className="w-full"
-                                          src="images/house/home-2.jpg"
-                                          alt=""
-                                        />
-                                      </div>
-                                    </div>
-                                    <div className="swiper-slide">
-                                      <div className="w-full">
-                                        <img
-                                          className="w-full"
-                                          src="images/house/home-1.jpg"
-                                          alt=""
-                                        />
-                                      </div>
-                                    </div>
-                                    <div className="swiper-slide">
-                                      <div className="w-full">
-                                        <img
-                                          className="w-full"
-                                          src="images/house/home-3.jpg"
-                                          alt=""
-                                        />
-                                      </div>
-                                    </div>
-                                    <div className="swiper-slide">
-                                      <div className="w-full">
-                                        <img
-                                          className="w-full"
-                                          src="images/house/home-4.jpg"
-                                          alt=""
-                                        />
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div className="swiper-pagination box-dream-pagination" />
-                                  <div className="box-dream-next swiper-button-next" />
-                                  <div className="box-dream-prev swiper-button-prev" />
-                                </div>
-                              </div>
-                              <div className="content">
-                                <div className="head">
-                                  <div className="title">
-                                    <a href="property-single-v1.html">
-                                      Villa One Hyde Park
-                                    </a>
-                                  </div>
-                                  <div className="price">$815,000</div>
-                                </div>
-                                <div className="location">
-                                  <div className="icon">
-                                    <i className="flaticon-location" />
-                                  </div>
-                                  <p>148-37 88th Ave, Jamaica, NY 11435</p>
-                                </div>
-                                <div className="icon-box">
-                                  <div className="item">
-                                    <i className="flaticon-hotel" />
-                                    <p>4 Beds</p>
-                                  </div>
-                                  <div className="item">
-                                    <i className="flaticon-bath-tub" />
-                                    <p>3 Baths</p>
-                                  </div>
-                                  <div className="item">
-                                    <i className="flaticon-minus-front" />
-                                    <p>2660 Sqft</p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
+
                           </div>
-                          <div className="swiper-slide">
-                            <div
-                              className="box-dream wow fadeInUp"
-                              data-wow-delay="0.3s"
-                            >
-                              <div className="image">
-                                <div className="list-tags">
-                                  <a href="#" className="tags-item for-sell">
-                                    FOR SELL
-                                  </a>
-                                </div>
-                                <div className="button-heart">
-                                  <i className="flaticon-heart-1" />
-                                </div>
-                                <div className="swiper-container slider-box-dream arrow-style-1 pagination-style-1">
-                                  <div className="swiper-wrapper">
-                                    <div className="swiper-slide">
-                                      <div className="w-full">
-                                        <img
-                                          className="w-full"
-                                          src="images/house/home-3.jpg"
-                                          alt=""
-                                        />
-                                      </div>
-                                    </div>
-                                    <div className="swiper-slide">
-                                      <div className="w-full">
-                                        <img
-                                          className="w-full"
-                                          src="images/house/home-2.jpg"
-                                          alt=""
-                                        />
-                                      </div>
-                                    </div>
-                                    <div className="swiper-slide">
-                                      <div className="w-full">
-                                        <img
-                                          className="w-full"
-                                          src="images/house/home-1.jpg"
-                                          alt=""
-                                        />
-                                      </div>
-                                    </div>
-                                    <div className="swiper-slide">
-                                      <div className="w-full">
-                                        <img
-                                          className="w-full"
-                                          src="images/house/home-4.jpg"
-                                          alt=""
-                                        />
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div className="swiper-pagination box-dream-pagination" />
-                                  <div className="box-dream-next swiper-button-next" />
-                                  <div className="box-dream-prev swiper-button-prev" />
-                                </div>
-                              </div>
-                              <div className="content">
-                                <div className="head">
-                                  <div className="title">
-                                    <a href="property-single-v1.html">
-                                      Home Pitt Street
-                                    </a>
-                                  </div>
-                                  <div className="price">$815,000</div>
-                                </div>
-                                <div className="location">
-                                  <div className="icon">
-                                    <i className="flaticon-location" />
-                                  </div>
-                                  <p>148-37 88th Ave, Jamaica, NY 11435</p>
-                                </div>
-                                <div className="icon-box">
-                                  <div className="item">
-                                    <i className="flaticon-hotel" />
-                                    <p>4 Beds</p>
-                                  </div>
-                                  <div className="item">
-                                    <i className="flaticon-bath-tub" />
-                                    <p>3 Baths</p>
-                                  </div>
-                                  <div className="item">
-                                    <i className="flaticon-minus-front" />
-                                    <p>2660 Sqft</p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
                           </div>
+                          </div>
+                         
+                        </div>
+                          <div className="col-6">
+                          <div className=" arrow-style-1 arrow-over">
+                      <div className="swiper-container slider-homes">
+                        <div className="swiper-wrapper">
+                  
                           <div className="swiper-slide">
                             <div className="box-dream">
                               <div className="image">
@@ -884,99 +715,7 @@ const HomePage = () => {
                                   <a href="#" className="tags-item for-sell">
                                     FOR SELL
                                   </a>
-                                  <a href="#" className="tags-item featured">
-                                    FEATURED
-                                  </a>
-                                </div>
-                                <div className="button-heart">
-                                  <i className="flaticon-heart-1" />
-                                </div>
-                                <div className="swiper-container slider-box-dream arrow-style-1 pagination-style-1">
-                                  <div className="swiper-wrapper">
-                                    <div className="swiper-slide">
-                                      <div className="w-full">
-                                        <img
-                                          className="w-full"
-                                          src="images/house/home-1.jpg"
-                                          alt=""
-                                        />
-                                      </div>
-                                    </div>
-                                    <div className="swiper-slide">
-                                      <div className="w-full">
-                                        <img
-                                          className="w-full"
-                                          src="images/house/home-2.jpg"
-                                          alt=""
-                                        />
-                                      </div>
-                                    </div>
-                                    <div className="swiper-slide">
-                                      <div className="w-full">
-                                        <img
-                                          className="w-full"
-                                          src="images/house/home-3.jpg"
-                                          alt=""
-                                        />
-                                      </div>
-                                    </div>
-                                    <div className="swiper-slide">
-                                      <div className="w-full">
-                                        <img
-                                          className="w-full"
-                                          src="images/house/home-4.jpg"
-                                          alt=""
-                                        />
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div className="swiper-pagination box-dream-pagination" />
-                                  <div className="box-dream-next swiper-button-next" />
-                                  <div className="box-dream-prev swiper-button-prev" />
-                                </div>
-                              </div>
-                              <div className="content">
-                                <div className="head">
-                                  <div className="title">
-                                    <a href="property-single-v1.html">
-                                      Archer House
-                                    </a>
-                                  </div>
-                                  <div className="price">$815,000</div>
-                                </div>
-                                <div className="location">
-                                  <div className="icon">
-                                    <i className="flaticon-location" />
-                                  </div>
-                                  <p>148-37 88th Ave, Jamaica, NY 11435</p>
-                                </div>
-                                <div className="icon-box">
-                                  <div className="item">
-                                    <i className="flaticon-hotel" />
-                                    <p>4 Beds</p>
-                                  </div>
-                                  <div className="item">
-                                    <i className="flaticon-bath-tub" />
-                                    <p>3 Baths</p>
-                                  </div>
-                                  <div className="item">
-                                    <i className="flaticon-minus-front" />
-                                    <p>2660 Sqft</p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="swiper-slide">
-                            <div className="box-dream">
-                              <div className="image">
-                                <div className="list-tags">
-                                  <a href="#" className="tags-item for-sell">
-                                    FOR SELL
-                                  </a>
-                                  <a href="#" className="tags-item featured">
-                                    FEATURED
-                                  </a>
+                                 
                                 </div>
                                 <div className="button-heart">
                                   <i className="flaticon-heart-1" />
@@ -1507,7 +1246,7 @@ const HomePage = () => {
             {/* flat-testimonial */}
             <section className="tf-section flat-testimonial">
               <div className="testimonials">
-                <div className="cl-container">
+                <div className="cl-container" >
                   <div className="row justify-between">
                     <div className="col-xl-4 col-md-6">
                       <div className="testimonials-inner">
@@ -1700,89 +1439,8 @@ const HomePage = () => {
                   </div>
                 </div>
               </div>
-              <div className="divider" />
-              <div className="cl-container">
-                <div className="row">
-                  <div className="col-12">
-                    <div className="heading-section text-center">
-                      <div className="text">
-                        Thousands of world’s leading companies trust Space
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-12">
-                    <div className="flat-brand">
-                      <div className="swiper-container slider-brand">
-                        <div className="swiper-wrapper">
-                          <div className="swiper-slide">
-                            <div className="slogan-logo">
-                              <a href="#">
-                                <img
-                                  src="images/image-box/brand-1.png"
-                                  alt="images"
-                                />
-                              </a>
-                            </div>
-                          </div>
-                          <div className="swiper-slide">
-                            <div className="slogan-logo">
-                              <a href="#">
-                                <img
-                                  src="images/image-box/brand-2.png"
-                                  alt="images"
-                                />
-                              </a>
-                            </div>
-                          </div>
-                          <div className="swiper-slide">
-                            <div className="slogan-logo">
-                              <a href="#">
-                                <img
-                                  src="images/image-box/brand-3.png"
-                                  alt="images"
-                                />
-                              </a>
-                            </div>
-                          </div>
-                          <div className="swiper-slide">
-                            <div className="slogan-logo">
-                              <a href="#">
-                                <img
-                                  src="images/image-box/brand-4.png"
-                                  alt="images"
-                                />
-                              </a>
-                            </div>
-                          </div>
-                          <div className="swiper-slide">
-                            <div className="slogan-logo">
-                              <a href="#">
-                                <img
-                                  src="images/image-box/brand-5.png"
-                                  alt="images"
-                                />
-                              </a>
-                            </div>
-                          </div>
-                          <div className="swiper-slide">
-                            <div className="slogan-logo">
-                              <a href="#">
-                                <img
-                                  src="images/image-box/brand-6.png"
-                                  alt="images"
-                                />
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
+        
+                         </section>
             {/* /flat-testimonial */}
             {/* flat-news */}
             <section className="tf-section flat-news">
