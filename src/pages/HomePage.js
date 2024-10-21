@@ -1,7 +1,73 @@
-const HomePage = () => {
+import React, { useEffect, useState } from 'react';
 
+
+const HomePage = () => {
+  const [properties, setProperties] = useState([]);
+  const [loading, setLoading] = useState(true); // New state for loading
+  const [imageProperties, setImageProperties] = useState([]);
+
+  
+  useEffect(() => {
+    fetchProperties();
+  }, []);
+  
+  const fetchProperties = () => {
+    setLoading(true);
+    fetch('https://bhubaneswarproperty.in/api/getProperties.php?limit=20&type=Apartment%20/%20Flat&mode=Sell&city=1&locality=5')
+      .then(response => response.json())
+      .then(data => {
+        console.log('API response:', data); // Log to confirm the response
+        setProperties(Array.isArray(data.data) ? data.data : []); // Access the data field
+        setLoading(false);
+      })
+      .catch(error => {
+        console.error('Error fetching properties:', error);
+        setLoading(false);
+      });
+  };
+
+
+  useEffect(() => {
+    fetchImages();
+  }, []);
+
+  const fetchImages = () => {
+    setLoading(true);
+    fetch('https://bhubaneswarproperty.in/api/getAdvertise.php')
+      .then(response => response.json())
+      .then(data => {
+        console.log('API response:', data); // Log to confirm the response
+        setImageProperties(Array.isArray(data.data) ? data.data : []); // Ensure it's an array
+        setLoading(false);
+      })
+      .catch(error => {
+        console.error('Error fetching imageproperties:', error);
+        setLoading(false);
+      });
+  };
+
+
+
+  
     return (
         <>
+              <style>
+        {`
+          .property-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr); /* Creates 5 equal columns */
+            gap: 16px; /* Space between grid items */
+          }
+
+          .property-grid a {
+            font-size: 20px;
+            line-height:28px;
+            
+            padding-right:55px;
+          }
+        `}
+      </style>
+
         <div class="body counter-scroll">
       {/* preload */}
       {/* /preload */}
@@ -625,40 +691,20 @@ const HomePage = () => {
                                   <div className="swiper-wrapper">
                                     <div className="swiper-slide">
                                       <div className="w-full">
-                                        <img
-                                          className="w-full"
-                                          src="images/house/home-1.jpg"
-                                          alt=""
-                                        />
+                                     {imageProperties.length > 0 && (
+  <div>
+    <img
+      className="w-full"
+      src={`https://bhubaneswarproperty.in/assets/advt/plan2/${imageProperties[0].pro_image}`} // First image from the array
+      alt="No image"
+      style={{ height: '450px' }}
+    />
+  
+  </div>
+)}
                                       </div>
                                     </div>
-                                    <div className="swiper-slide">
-                                      <div className="w-full">
-                                        <img
-                                          className="w-full"
-                                          src="images/house/home-2.jpg"
-                                          alt=""
-                                        />
-                                      </div>
-                                    </div>
-                                    <div className="swiper-slide">
-                                      <div className="w-full">
-                                        <img
-                                          className="w-full"
-                                          src="images/house/home-3.jpg"
-                                          alt=""
-                                        />
-                                      </div>
-                                    </div>
-                                    <div className="swiper-slide">
-                                      <div className="w-full">
-                                        <img
-                                          className="w-full"
-                                          src="images/house/home-4.jpg"
-                                          alt=""
-                                        />
-                                      </div>
-                                    </div>
+
                                   </div>
                                   <div className="swiper-pagination box-dream-pagination" />
                                   <div className="box-dream-next swiper-button-next" />
@@ -669,7 +715,17 @@ const HomePage = () => {
                                 <div className="head">
                                   <div className="title">
                                     <a href="property-single-v1.html">
-                                      Archer House
+                                    {loading ? (
+  <p>Loading properties...</p>
+) : properties.length > 0 ? (
+  <a href="#" key={properties[0].id}>
+    {properties[0].property_name} {/* Display only the first property name */}
+  </a>
+) : (
+  <p>No properties available at the moment.</p>
+)}
+      
+
                                     </a>
                                   </div>
                                   <div className="price">$815,000</div>
@@ -678,21 +734,42 @@ const HomePage = () => {
                                   <div className="icon">
                                     <i className="flaticon-location" />
                                   </div>
-                                  <p>148-37 88th Ave, Jamaica, NY 11435</p>
+                                  <p>{loading ? (
+  <p>Loading properties...</p>
+) : properties.length > 0 ? (
+  <a href="#" key={properties[0].id}>
+    {properties[0].title} {/* Display only the first property name */}
+  </a>
+) : (
+  <p>No properties available at the moment.</p>
+)}</p>
                                 </div>
                                 <div className="icon-box">
                                   <div className="item">
                                     <i className="flaticon-hotel" />
-                                    <p>4 Beds</p>
+                                    <p>{loading ? (
+  <p>Loading properties...</p>
+) : properties.length > 0 ? (
+  <a href="#" key={properties[0].id}>
+    {properties[0].bedrooms} {/* Display only the first property name */}
+  </a>
+) : (
+  <p>No properties available at the moment.</p>
+)}</p>
                                   </div>
                                   <div className="item">
                                     <i className="flaticon-bath-tub" />
-                                    <p>3 Baths</p>
+                                    <p>{loading ? (
+  <p>Loading properties...</p>
+) : properties.length > 0 ? (
+  <a href="#" key={properties[0].id}>
+    {properties[0].bathrooms} {/* Display only the first property name */}
+  </a>
+) : (
+  <p>No properties available at the moment.</p>
+)}</p>
                                   </div>
-                                  <div className="item">
-                                    <i className="flaticon-minus-front" />
-                                    <p>2660 Sqft</p>
-                                  </div>
+                                  
                                 </div>
                               </div>
                             </div>
@@ -724,38 +801,18 @@ const HomePage = () => {
                                   <div className="swiper-wrapper">
                                     <div className="swiper-slide">
                                       <div className="w-full">
-                                        <img
-                                          className="w-full"
-                                          src="images/house/home-2.jpg"
-                                          alt=""
-                                        />
-                                      </div>
-                                    </div>
-                                    <div className="swiper-slide">
-                                      <div className="w-full">
-                                        <img
-                                          className="w-full"
-                                          src="images/house/home-1.jpg"
-                                          alt=""
-                                        />
-                                      </div>
-                                    </div>
-                                    <div className="swiper-slide">
-                                      <div className="w-full">
-                                        <img
-                                          className="w-full"
-                                          src="images/house/home-3.jpg"
-                                          alt=""
-                                        />
-                                      </div>
-                                    </div>
-                                    <div className="swiper-slide">
-                                      <div className="w-full">
-                                        <img
-                                          className="w-full"
-                                          src="images/house/home-4.jpg"
-                                          alt=""
-                                        />
+                                
+                                     {imageProperties.length > 1 && (
+  
+    <img
+      className="w-full"
+      src={`https://bhubaneswarproperty.in/assets/advt/plan2/${imageProperties[1].pro_image}`} // First image from the array
+      alt="No image"
+      style={{ height: '450px' }}
+    />
+  
+
+)}
                                       </div>
                                     </div>
                                   </div>
@@ -768,7 +825,16 @@ const HomePage = () => {
                                 <div className="head">
                                   <div className="title">
                                     <a href="property-single-v1.html">
-                                      Villa One Hyde Park
+                                    {loading ? (
+  <p>Loading properties...</p>
+) : properties.length > 0 ? (
+  <a href="#" key={properties[1].id}>
+    {properties[1].property_name} {/* Display only the first property name */}
+  </a>
+) : (
+  <p>No properties available at the moment.</p>
+)}
+      
                                     </a>
                                   </div>
                                   <div className="price">$815,000</div>
@@ -777,21 +843,42 @@ const HomePage = () => {
                                   <div className="icon">
                                     <i className="flaticon-location" />
                                   </div>
-                                  <p>148-37 88th Ave, Jamaica, NY 11435</p>
+                                  <p>{loading ? (
+  <p>Loading properties...</p>
+) : properties.length > 0 ? (
+  <a href="#" key={properties[1].id}>
+    {properties[1].title} {/* Display only the first property name */}
+  </a>
+) : (
+  <p>No properties available at the moment.</p>
+)}</p>
                                 </div>
                                 <div className="icon-box">
                                   <div className="item">
                                     <i className="flaticon-hotel" />
-                                    <p>4 Beds</p>
+                                    <p>{loading ? (
+  <p>Loading properties...</p>
+) : properties.length > 0 ? (
+  <a href="#" key={properties[1].id}>
+    {properties[1].bedrooms} {/* Display only the first property name */}
+  </a>
+) : (
+  <p>No properties available at the moment.</p>
+)}</p>
                                   </div>
                                   <div className="item">
                                     <i className="flaticon-bath-tub" />
-                                    <p>3 Baths</p>
+                                    <p>{loading ? (
+  <p>Loading properties...</p>
+) : properties.length > 0 ? (
+  <a href="#" key={properties[1].id}>
+    {properties[1].bathrooms} {/* Display only the first property name */}
+  </a>
+) : (
+  <p>No properties available at the moment.</p>
+)}</p>
                                   </div>
-                                  <div className="item">
-                                    <i className="flaticon-minus-front" />
-                                    <p>2660 Sqft</p>
-                                  </div>
+                                  
                                 </div>
                               </div>
                             </div>
@@ -813,117 +900,58 @@ const HomePage = () => {
                   <div className="col-12">
                     <div className="heading-section text-center">
                       <h2 className=" wow fadeInUp" data-wow-delay="0.1s">
-                        Find Properties in These Cities
+                      Your Next Home Awaits in These Amazing Cities
                       </h2>
                       <div className="text wow fadeInUp" data-wow-delay="0.2s">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Browse our curated listings and find the perfect match for your lifestyle
                       </div>
                     </div>
                   </div>
                 </div>
                 <div className="row">
-                  <div className="col-12">
-                    <div className="inner">
-                      <div
-                        className="cities-item item-1 wow fadeInUp"
-                        data-wow-delay="0.1s"
-                      >
-                        <img src="images/image-box/cities-1.jpg" alt="" />
-                        <div className="content">
-                          <p>13 Properties</p>
-                          <h4>New York</h4>
-                        </div>
-                        <a
-                          href="property-map-v1.html"
-                          className="button-arrow-right"
-                        >
-                          <i className="icon-arrow-right-add" />
-                        </a>
-                      </div>
-                      <div
-                        className="cities-item item-2 wow fadeInUp"
-                        data-wow-delay="0.15s"
-                      >
-                        <img src="images/image-box/cities-2.jpg" alt="" />
-                        <div className="content">
-                          <p>55 Properties</p>
-                          <h4>Chicago</h4>
-                        </div>
-                        <a
-                          href="property-map-v1.html"
-                          className="button-arrow-right"
-                        >
-                          <i className="icon-arrow-right-add" />
-                        </a>
-                      </div>
-                      <div
-                        className="cities-item item-3 wow fadeInUp"
-                        data-wow-delay="0.2s"
-                      >
-                        <img src="images/image-box/cities-3.jpg" alt="" />
-                        <div className="content">
-                          <p>37 Properties</p>
-                          <h4>Los Angeles</h4>
-                        </div>
-                        <a
-                          href="property-map-v1.html"
-                          className="button-arrow-right"
-                        >
-                          <i className="icon-arrow-right-add" />
-                        </a>
-                      </div>
-                      <div
-                        className="cities-item item-4 wow fadeInUp"
-                        data-wow-delay="0.1s"
-                      >
-                        <img src="images/image-box/cities-4.jpg" alt="" />
-                        <div className="content">
-                          <p>26 Properties</p>
-                          <h4>San Francisco</h4>
-                        </div>
-                        <a
-                          href="property-map-v1.html"
-                          className="button-arrow-right"
-                        >
-                          <i className="icon-arrow-right-add" />
-                        </a>
-                      </div>
-                      <div
-                        className="cities-item item-5 wow fadeInUp"
-                        data-wow-delay="0.15s"
-                      >
-                        <img src="images/image-box/cities-5.jpg" alt="" />
-                        <div className="content">
-                          <p>93 Properties</p>
-                          <h4>Florida</h4>
-                        </div>
-                        <a
-                          href="property-map-v1.html"
-                          className="button-arrow-right"
-                        >
-                          <i className="icon-arrow-right-add" />
-                        </a>
-                      </div>
-                      <div
-                        className="cities-item item-6 wow fadeInUp"
-                        data-wow-delay="0.2s"
-                      >
-                        <img src="images/image-box/cities-6.jpg" alt="" />
-                        <div className="content">
-                          <p>84 Properties</p>
-                          <h4>Miami</h4>
-                        </div>
-                        <a
-                          href="property-map-v1.html"
-                          className="button-arrow-right"
-                        >
-                          <i className="icon-arrow-right-add" />
-                        </a>
-                      </div>
+      <div className="col-12">
+        {imageProperties.length > 0 && (
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
+            {imageProperties.slice(0, 6).map((image, index) => {
+              const property = properties[index]; // Get the corresponding property
+
+              return (
+                <div
+                  key={index}
+                  className={`cities-item item-${index + 1} wow fadeInUp`} // Dynamic class
+                  style={{
+                    width: index === 0 || index === 5 ? '46%' : '25%', // 46% for larger images, 25% for smaller ones
+                    marginBottom: '10px',
+                    position: 'relative', // Positioning context for absolute positioning
+                  }}
+                >
+                  {/* Display zipcode and address above the image */}
+                  {property ? (
+                    <div className='content' style={{ padding: '10px', textAlign: 'center',  position: 'absolute', top: '10px', left: '10px', color: 'white' }}>
+                      <a href="#" key={property.id} style={{ color: 'white', textDecoration: 'none' }}>
+                        <h4 style={{ margin: '0', fontSize: '1.8rem' }}>{property.zipcode}</h4>
+                        <p style={{ margin: '0', fontSize: '1.8rem' }}>{property.address}</p>
+                      </a>
                     </div>
-                  </div>
+                  ) : (
+                    <div style={{ padding: '10px', textAlign: 'center', color: 'white' }}>
+                      <p>No address available</p>
+                    </div>
+                  )}
+                  <img
+                    className="w-full"
+                    src={`https://bhubaneswarproperty.in/assets/advt/plan2/${image.pro_image}`} // Display the image
+                    alt={`Image ${index + 1}`}
+                    style={{ height: '450px', width: '100%', objectFit: 'cover' }} // Set height to 450px, full width, and cover the container
+                  />
                 </div>
-              </div>
+              );
+            })}
+          </div>
+        )}
+      </div>
+    </div>
+       </div> 
             </section>
             {/* /flat-cities */}
             {/* choose-us */}
@@ -1612,47 +1640,21 @@ const HomePage = () => {
                       <div className="widget-content-tab">
                         <div className="widget-content-inner active">
                           <div className="gird-tab-search">
-                            <div className="item">
-                              <a href="#">Real estate NSW</a>
-                              <a href="#">Real estate VIC</a>
-                              <a href="#">Real estate QLD</a>
-                              <a href="#">Real estate WA</a>
-                              <a href="#">Real estate SA</a>
-                              <a href="#">Real estate TAS</a>
-                            </div>
-                            <div className="item">
-                              <a href="#">Real estate ACT</a>
-                              <a href="#">Real estate NT</a>
-                              <a href="#">Real estate Sydney</a>
-                              <a href="#">Real estate Melbourne</a>
-                              <a href="#">Real estate Brisbane</a>
-                              <a href="#">Real estate Perth</a>
-                            </div>
-                            <div className="item">
-                              <a href="#">Real estate Adelaide</a>
-                              <a href="#">Real estate Hobart</a>
-                              <a href="#">Real estate Canberra</a>
-                              <a href="#">Real estate Darwin</a>
-                              <a href="#">Real estate ACT</a>
-                              <a href="#">Real estate NT</a>
-                            </div>
-                            <div className="item">
-                              <a href="#">Real estate NSW</a>
-                              <a href="#">Real estate VIC</a>
-                              <a href="#">Real estate QLD</a>
-                              <a href="#">Real estate WA</a>
-                              <a href="#">Real estate SA</a>
-                              <a href="#">Real estate TAS</a>
-                            </div>
-                            <div className="item">
-                              <a href="#">Real estate ACT</a>
-                              <a href="#">Real estate NT</a>
-                              <a href="#">Real estate Sydney</a>
-                              <a href="#">Real estate Melbourne</a>
-                              <a href="#">Real estate Brisbane</a>
-                              <a href="#">Real estate Perth</a>
-                            </div>
-                          </div>
+                          <div className="property-grid">
+        {loading ? (
+          <p>Loading properties...</p>
+        ) : properties.length > 0 ? (
+          properties.map(property => (
+            <a href="#" key={property.id}>
+              {property.property_name}
+            </a>
+          ))
+        ) : (
+          <p>No properties available at the moment.</p>
+        )}
+      </div>
+
+                              </div>
                         </div>
                         <div className="widget-content-inner">
                           <div className="gird-tab-search">
