@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 
 const HomePage = () => {
@@ -83,168 +84,90 @@ const HomePage = () => {
             <div className="header-inner">
               <div className="header-inner-wrap">
                 <div id="site-logo">
-                  <a href="index.html" rel="home">
+                  <Link to="index.html" rel="home">
                     <img id="logo-header" src="images/logo/logo-white.svg" alt="" />
                     <img
                       id="logo-header-mobile"
                       src="images/logo/logo.svg"
                       alt=""
                     />
-                  </a>
+                  </Link>
                 </div>
                 <nav className="main-menu style-white">
                   <ul className="navigation">
                     <li className="has-children current">
-                      <a href="javascript:void(0);">Home</a>
-                      <ul>
-                        <li className="current">
-                          <a href="home" className="current">
-                            Home Page 01
-                          </a>
-                        </li>
-                        
-                      </ul>
+                      <Link to="/">Home</Link>
+                      
                     </li>
                     <li className="has-children">
-                      <a href="javascript:void(0);">Property</a>
+                      <Link to="javascript:void(0);">Property</Link>
                       <ul className="mega-menu">
                         <li>
                           <ul>
                             <li className="title">List view</li>
                             <li>
-                              <a href="PropertyList">Property List 01</a>
+                              <Link to="PropertyList">Property List 01</Link>
                             </li>
                             
                           </ul>
                         </li>
                         <li>
-                          <ul>
-                            <li className="title">Grid view</li>
-                            <li>
-                              <a href="property-grid-v1.html">Property Grid 01</a>
-                            </li>
-                            <li>
-                              <a href="property-grid-v2.html">Property Grid 02</a>
-                            </li>
-                            <li>
-                              <a href="property-grid-v3.html">Property Grid 03</a>
-                            </li>
-                            <li>
-                              <a href="property-grid-v4.html">Property Grid 04</a>
-                            </li>
-                          </ul>
-                        </li>
+                         </li>
                         <li>
                           <ul>
                             <li className="title">Single view</li>
                             <li>
-                              <a href="PropertySingle">
+                              <Link to="PropertySingle">
                                 Property Single 01
-                              </a>
+                              </Link>
                             </li>
-                                                     </ul>
+                      </ul>
                         </li>
                         <li>
-                          <ul>
-                            <li className="title">Map Style</li>
-                            <li>
-                              <a href="property-map-v1.html">Property Map 01</a>
-                            </li>
-                            <li>
-                              <a href="property-map-v2.html">Property Map 02</a>
-                            </li>
-                            <li>
-                              <a href="property-map-v3.html">Property Map 03</a>
-                            </li>
-                            <li>
-                              <a href="property-map-v4.html">Property Map 04</a>
-                            </li>
-                          </ul>
+                         
                         </li>
                       </ul>
                     </li>
                     <li className="has-children">
-                      <a href="javascript:void(0);">Realtor</a>
+                      <Link to="javascript:void(0);">Pages</Link>
                       <ul>
                         <li>
-                          <a href="agent-list.html">Agent List</a>
+                          <Link to="about.html">About Us</Link>
                         </li>
                         <li>
-                          <a href="agent-single.html">Agent Single</a>
+                          <Link to="pricing.html">Pricing Packages</Link>
                         </li>
                         <li>
-                          <a href="agency-list.html">Agency List</a>
+                          <Link to="faq.html">FAQ Page</Link>
                         </li>
                         <li>
-                          <a href="agency-single.html">Agency Single</a>
+                          <Link to="404.html">404 Page</Link>
+                        </li>
+                        
+                        <li>
+                          <Link to="dashboard.html">Dashboard</Link>
                         </li>
                       </ul>
                     </li>
                     <li className="has-children">
-                      <a href="javascript:void(0);">Pages</a>
+                      <Link to="javascript:void(0);">Shop</Link>
                       <ul>
                         <li>
-                          <a href="about.html">About Us</a>
+                          <Link to="shop-list.html">Shop List</Link>
                         </li>
-                        <li>
-                          <a href="compare.html">Compare</a>
-                        </li>
-                        <li>
-                          <a href="pricing.html">Pricing Packages</a>
-                        </li>
-                        <li>
-                          <a href="faq.html">FAQ Page</a>
-                        </li>
-                        <li>
-                          <a href="404.html">404 Page</a>
-                        </li>
-                        <li>
-                          <a href="ui-elements.html">UI Elements</a>
-                        </li>
-                        <li>
-                          <a href="dashboard.html">Dashboard</a>
-                        </li>
+                        
                       </ul>
                     </li>
                     <li className="has-children">
-                      <a href="javascript:void(0);">Shop</a>
+                      <Link to="javascript:void(0);">Blog</Link>
                       <ul>
                         <li>
-                          <a href="shop-list.html">Shop List</a>
-                        </li>
-                        <li>
-                          <a href="shop-single.html">Shop Single</a>
-                        </li>
-                        <li>
-                          <a href="shop-cart.html">Shop Cart</a>
-                        </li>
-                        <li>
-                          <a href="shop-checkout.html">Shop Checkout</a>
-                        </li>
-                        <li>
-                          <a href="shop-order.html">Shop Order</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className="has-children">
-                      <a href="javascript:void(0);">Blog</a>
-                      <ul>
-                        <li>
-                          <a href="blog-list-v1.html">Blog List 01</a>
-                        </li>
-                        <li>
-                          <a href="blog-list-v2.html">Blog List 02</a>
-                        </li>
-                        <li>
-                          <a href="blog-list-v3.html">Blog List 03</a>
-                        </li>
-                        <li>
-                          <a href="blog-single.html">Blog Single</a>
+                          <Link to="blog-list-v1.html">Blog List 01</Link>
                         </li>
                       </ul>
                     </li>
                     <li>
-                      <a href="contact.html">Contact</a>
+                      <Link to="contact.html">Contact</Link>
                     </li>
                   </ul>
                 </nav>
@@ -265,12 +188,12 @@ const HomePage = () => {
                     </div>
                   </div>
                   <div className="header-btn">
-                    <a
-                      href="dashboard-add-properties.html"
+                    <Link
+                      to="dashboard-add-properties.html"
                       className="tf-button-default style-white"
                     >
                       Add Listing
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <a className="mobile-nav-toggler mobile-button" href="#menu" />
@@ -285,35 +208,9 @@ const HomePage = () => {
                   <span>Home</span>
                   <ul>
                     <li className="current">
-                      <a href="index.html">Home Page 01</a>
+                      <Link to="/">Home Page 01</Link>
                     </li>
-                    <li>
-                      <a href="home-02.html">Home Page 02</a>
-                    </li>
-                    <li>
-                      <a href="home-03.html">Home Page 03</a>
-                    </li>
-                    <li>
-                      <a href="home-04.html">Home Page 04</a>
-                    </li>
-                    <li>
-                      <a href="home-05.html">Home Page 05</a>
-                    </li>
-                    <li>
-                      <a href="home-06.html">Home Page 06</a>
-                    </li>
-                    <li>
-                      <a href="home-07.html">Home Page 07</a>
-                    </li>
-                    <li>
-                      <a href="home-08.html">Home Page 08</a>
-                    </li>
-                    <li>
-                      <a href="home-09.html">Home Page 09</a>
-                    </li>
-                    <li>
-                      <a href="home-10.html">Home Page 10</a>
-                    </li>
+                   
                   </ul>
                 </li>
                 <li>
@@ -323,118 +220,54 @@ const HomePage = () => {
                       <span>List view</span>
                       <ul>
                         <li>
-                          <a href="property-list-v1.html">Property List 01</a>
-                        </li>
-                        <li>
-                          <a href="property-list-v2.html">Property List 02</a>
-                        </li>
-                        <li>
-                          <a href="property-list-v3.html">Property List 03</a>
+                          <Link to="/PropertyList">Property List 01</Link>
                         </li>
                       </ul>
                     </li>
                     <li>
-                      <span>Grid view</span>
-                      <ul>
-                        <li>
-                          <a href="property-grid-v1.html">Property Grid 01</a>
-                        </li>
-                        <li>
-                          <a href="property-grid-v2.html">Property Grid 02</a>
-                        </li>
-                        <li>
-                          <a href="property-grid-v3.html">Property Grid 03</a>
-                        </li>
-                        <li>
-                          <a href="property-grid-v4.html">Property Grid 04</a>
-                        </li>
-                      </ul>
+                     
                     </li>
                     <li>
                       <span>Single view</span>
                       <ul>
                         <li>
-                          <a href="property-single-v1.html">Property Single 01</a>
+                          <Link to="/PropertySingle">Property Single 01</Link>
                         </li>
-                        <li>
-                          <a href="property-single-v2.html">Property Single 02</a>
-                        </li>
-                        <li>
-                          <a href="property-single-v3.html">Property Single 03</a>
-                        </li>
-                        <li>
-                          <a href="property-single-v4.html">Property Single 04</a>
-                        </li>
-                        <li>
-                          <a href="property-single-v5.html">Property Single 05</a>
-                        </li>
-                        <li>
-                          <a href="property-single-v6.html">Property Single 06</a>
-                        </li>
-                        <li>
-                          <a href="property-single-v7.html">Property Single 07</a>
-                        </li>
+                       
                       </ul>
                     </li>
                     <li>
-                      <span>Map Style</span>
-                      <ul>
-                        <li>
-                          <a href="property-map-v1.html">Property Map 01</a>
-                        </li>
-                        <li>
-                          <a href="property-map-v2.html">Property Map 02</a>
-                        </li>
-                        <li>
-                          <a href="property-map-v3.html">Property Map 03</a>
-                        </li>
-                        <li>
-                          <a href="property-map-v4.html">Property Map 04</a>
-                        </li>
-                      </ul>
+                      
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <span>Realtor</span>
-                  <ul>
-                    <li>
-                      <a href="agent-list.html">Agent List</a>
-                    </li>
-                    <li>
-                      <a href="agent-single.html">Agent Single</a>
-                    </li>
-                    <li>
-                      <a href="agency-list.html">Agency List</a>
-                    </li>
-                    <li>
-                      <a href="agency-single.html">Agency Single</a>
-                    </li>
-                  </ul>
+                
+                  
                 </li>
                 <li>
                   <span>Pages</span>
                   <ul>
                     <li>
-                      <a href="about.html">About Us</a>
+                      <Link to="about.html">About Us</Link>
                     </li>
                     <li>
-                      <a href="compare.html">Compare</a>
+                      <Link to="compare.html">Compare</Link>
                     </li>
                     <li>
-                      <a href="pricing.html">Pricing Packages</a>
+                      <Link to="pricing.html">Pricing Packages</Link>
                     </li>
                     <li>
-                      <a href="faq.html">FAQ Page</a>
+                      <Link to="faq.html">FAQ Page</Link>
                     </li>
                     <li>
-                      <a href="404.html">404 Page</a>
+                      <Link to="404.html">404 Page</Link>
                     </li>
                     <li>
-                      <a href="ui-elements.html">UI Elements</a>
+                      <Link to="ui-elements.html">UI Elements</Link>
                     </li>
                     <li>
-                      <a href="dashboard.html">Dashboard</a>
+                      <Link to="dashboard.html">Dashboard</Link>
                     </li>
                   </ul>
                 </li>
@@ -442,19 +275,19 @@ const HomePage = () => {
                   <span>Shop</span>
                   <ul>
                     <li>
-                      <a href="shop-list.html">Shop List</a>
+                      <Link to="shop-list.html">Shop List</Link>
                     </li>
                     <li>
-                      <a href="shop-single.html">Shop Single</a>
+                      <Link to="shop-single.html">Shop Single</Link>
                     </li>
                     <li>
-                      <a href="shop-cart.html">Shop Cart</a>
+                      <Link to="shop-cart.html">Shop Cart</Link>
                     </li>
                     <li>
-                      <a href="shop-checkout.html">Shop Checkout</a>
+                      <Link to="shop-checkout.html">Shop Checkout</Link>
                     </li>
                     <li>
-                      <a href="shop-order.html">Shop Order</a>
+                      <Link to="shop-order.html">Shop Order</Link>
                     </li>
                   </ul>
                 </li>
@@ -462,21 +295,21 @@ const HomePage = () => {
                   <span>Blog</span>
                   <ul>
                     <li>
-                      <a href="blog-list-v1.html">Blog List 01</a>
+                      <Link to="blog-list-v1.html">Blog List 01</Link>
                     </li>
                     <li>
-                      <a href="blog-list-v2.html">Blog List 02</a>
+                      <Link to="blog-list-v2.html">Blog List 02</Link>
                     </li>
                     <li>
-                      <a href="blog-list-v3.html">Blog List 03</a>
+                      <Link to="blog-list-v3.html">Blog List 03</Link>
                     </li>
                     <li>
-                      <a href="blog-single.html">Blog Single</a>
+                      <Link to="blog-single.html">Blog Single</Link>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a href="contact.html">Contact</a>
+                  <Link to="contact.html">Contact</Link>
                 </li>
               </ul>
             </nav>
@@ -677,12 +510,12 @@ const HomePage = () => {
                             >
                               <div className="image">
                                 <div className="list-tags">
-                                  <a href="#" className="tags-item for-sell">
+                                  <Link to="#" className="tags-item for-sell">
                                     FOR RENT
-                                  </a>
-                                  <a href="#" className="tags-item featured">
+                                  </Link>
+                                  <Link to="#" className="tags-item featured">
                                     FEATURED
-                                  </a>
+                                  </Link>
                                 </div>
                                 <div className="button-heart">
                                   <i className="flaticon-heart-1" />
@@ -714,19 +547,19 @@ const HomePage = () => {
                               <div className="content">
                                 <div className="head">
                                   <div className="title">
-                                    <a href="property-single-v1.html">
+                                    <Link to="property-single-v1.html">
                                     {loading ? (
   <p>Loading properties...</p>
 ) : properties.length > 0 ? (
-  <a href="#" key={properties[0].id}>
+  <Link to="#" key={properties[0].id}>
     {properties[0].property_name} {/* Display only the first property name */}
-  </a>
+  </Link>
 ) : (
   <p>No properties available at the moment.</p>
 )}
       
 
-                                    </a>
+                                    </Link>
                                   </div>
                                   <div className="price">$815,000</div>
                                 </div>
@@ -737,9 +570,9 @@ const HomePage = () => {
                                   <p>{loading ? (
   <p>Loading properties...</p>
 ) : properties.length > 0 ? (
-  <a href="#" key={properties[0].id}>
+  <Link to="#" key={properties[0].id}>
     {properties[0].title} {/* Display only the first property name */}
-  </a>
+  </Link>
 ) : (
   <p>No properties available at the moment.</p>
 )}</p>
@@ -750,9 +583,9 @@ const HomePage = () => {
                                     <p>{loading ? (
   <p>Loading properties...</p>
 ) : properties.length > 0 ? (
-  <a href="#" key={properties[0].id}>
+  <Link to="#" key={properties[0].id}>
     {properties[0].bedrooms} {/* Display only the first property name */}
-  </a>
+  </Link>
 ) : (
   <p>No properties available at the moment.</p>
 )}</p>
@@ -762,9 +595,9 @@ const HomePage = () => {
                                     <p>{loading ? (
   <p>Loading properties...</p>
 ) : properties.length > 0 ? (
-  <a href="#" key={properties[0].id}>
+  <Link to="#" key={properties[0].id}>
     {properties[0].bathrooms} {/* Display only the first property name */}
-  </a>
+  </Link>
 ) : (
   <p>No properties available at the moment.</p>
 )}</p>
@@ -789,9 +622,9 @@ const HomePage = () => {
                             <div className="box-dream">
                               <div className="image">
                                 <div className="list-tags">
-                                  <a href="#" className="tags-item for-sell">
+                                  <Link to="#" className="tags-item for-sell">
                                     FOR SELL
-                                  </a>
+                                  </Link>
                                  
                                 </div>
                                 <div className="button-heart">
@@ -824,18 +657,18 @@ const HomePage = () => {
                               <div className="content">
                                 <div className="head">
                                   <div className="title">
-                                    <a href="property-single-v1.html">
+                                    <Link to="property-single-v1.html">
                                     {loading ? (
   <p>Loading properties...</p>
 ) : properties.length > 0 ? (
-  <a href="#" key={properties[1].id}>
+  <Link to="#" key={properties[1].id}>
     {properties[1].property_name} {/* Display only the first property name */}
-  </a>
+  </Link>
 ) : (
   <p>No properties available at the moment.</p>
 )}
       
-                                    </a>
+                                    </Link>
                                   </div>
                                   <div className="price">$815,000</div>
                                 </div>
@@ -846,9 +679,9 @@ const HomePage = () => {
                                   <p>{loading ? (
   <p>Loading properties...</p>
 ) : properties.length > 0 ? (
-  <a href="#" key={properties[1].id}>
+  <Link to="#" key={properties[1].id}>
     {properties[1].title} {/* Display only the first property name */}
-  </a>
+  </Link>
 ) : (
   <p>No properties available at the moment.</p>
 )}</p>
@@ -859,9 +692,9 @@ const HomePage = () => {
                                     <p>{loading ? (
   <p>Loading properties...</p>
 ) : properties.length > 0 ? (
-  <a href="#" key={properties[1].id}>
+  <Link to="#" key={properties[1].id}>
     {properties[1].bedrooms} {/* Display only the first property name */}
-  </a>
+  </Link>
 ) : (
   <p>No properties available at the moment.</p>
 )}</p>
@@ -871,9 +704,9 @@ const HomePage = () => {
                                     <p>{loading ? (
   <p>Loading properties...</p>
 ) : properties.length > 0 ? (
-  <a href="#" key={properties[1].id}>
+  <Link to="#" key={properties[1].id}>
     {properties[1].bathrooms} {/* Display only the first property name */}
-  </a>
+  </Link>
 ) : (
   <p>No properties available at the moment.</p>
 )}</p>
@@ -928,10 +761,10 @@ const HomePage = () => {
                   {/* Display zipcode and address above the image */}
                   {property ? (
                     <div className='content' style={{ padding: '10px', textAlign: 'center',  position: 'absolute', top: '10px', left: '10px', color: 'white' }}>
-                      <a href="#" key={property.id} style={{ color: 'white', textDecoration: 'none' }}>
+                      <Link to="#" key={property.id} style={{ color: 'white', textDecoration: 'none' }}>
                         <h4 style={{ margin: '0', fontSize: '1.8rem' }}>{property.zipcode}</h4>
                         <p style={{ margin: '0', fontSize: '1.8rem' }}>{property.address}</p>
-                      </a>
+                      </Link>
                     </div>
                   ) : (
                     <div style={{ padding: '10px', textAlign: 'center', color: 'white' }}>
@@ -976,9 +809,9 @@ const HomePage = () => {
                         <i className="flaticon-house" />
                       </div>
                       <div className="content">
-                        <a href="#" className="title">
+                        <Link to="#" className="title">
                           Find your future home
-                        </a>
+                        </Link>
                         <p>
                           We help you find a new home by offering a smart real
                           estate experience
@@ -992,9 +825,9 @@ const HomePage = () => {
                         <i className="flaticon-seller" />
                       </div>
                       <div className="content">
-                        <a href="#" className="title">
+                        <Link to="#" className="title">
                           Experienced agents
-                        </a>
+                        </Link>
                         <p>Find an experienced agent who knows your market best</p>
                       </div>
                     </div>
@@ -1005,9 +838,9 @@ const HomePage = () => {
                         <i className="flaticon-buy-home" />
                       </div>
                       <div className="content">
-                        <a href="#" className="title">
+                        <Link to="#" className="title">
                           Buy or rent homes
-                        </a>
+                        </Link>
                         <p>
                           Millions of houses and apartments in your favourite cities
                         </p>
@@ -1020,9 +853,9 @@ const HomePage = () => {
                         <i className="flaticon-computer" />
                       </div>
                       <div className="content">
-                        <a href="#" className="title">
+                        <Link to="#" className="title">
                           List your own property
-                        </a>
+                        </Link>
                         <p>Sign up now and sell or rent your own properties</p>
                       </div>
                     </div>
@@ -1084,36 +917,36 @@ const HomePage = () => {
                           Explore our wide variety of properties to fid your dream
                           home today
                         </p>
-                        <a
-                          href="property-single-v1.html"
+                        <Link
+                          to="property-single-v1.html"
                           className="button-arrow-right"
                         >
                           <i className="icon-arrow-right-add" />
-                        </a>
+                        </Link>
                       </div>
                       <div
                         className="video-wrap item-3 wow fadeInUp"
                         data-wow-delay="0.1s"
                       >
                         <img src="images/image-box/video-1.jpg" alt="" />
-                        <a
-                          href="https://www.youtube.com/watch?v=MLpWrANjFbI"
+                        <Link
+                          to="https://www.youtube.com/watch?v=MLpWrANjFbI"
                           className="popup-youtube"
                         >
                           <div className="icon">
                             <i className="flaticon-play" />
                           </div>
-                        </a>
+                        </Link>
                       </div>
                       <div className="box-dream style-absolute type-no-bg-content style-properties item-4 wow fadeInUp">
                         <div className="image">
                           <div className="list-tags">
-                            <a href="#" className="tags-item for-sell">
+                            <Link to="#" className="tags-item for-sell">
                               FOR RENT
-                            </a>
-                            <a href="#" className="tags-item featured">
+                            </Link>
+                            <Link to="#" className="tags-item featured">
                               FEATURED
-                            </a>
+                            </Link>
                           </div>
                           <img
                             className="w-full"
@@ -1124,7 +957,7 @@ const HomePage = () => {
                         <div className="content">
                           <div className="head">
                             <div className="title">
-                              <a href="property-single-v1.html">Luxury Condo</a>
+                              <Link to="property-single-v1.html">Luxury Condo</Link>
                             </div>
                           </div>
                           <div className="location">
@@ -1151,12 +984,12 @@ const HomePage = () => {
                             </div>
                           </div>
                         </div>
-                        <a
-                          href="property-single-v1.html"
+                        <Link
+                          to="property-single-v1.html"
                           className="button-arrow-right"
                         >
                           <i className="icon-arrow-right-add" />
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -1195,13 +1028,13 @@ const HomePage = () => {
                         nunc egestas ut morbi. Leo diam diam nibh eget fermentum
                         massa pretium. Mi mauris nulla ac dictum ut mauris non.
                       </div>
-                      <a
-                        href="#"
+                      <Link
+                        to="#"
                         className="tf-button-primary wow fadeInUp"
                         data-wow-delay="0.15s"
                       >
                         Learn More <i className="icon-arrow-right-add" />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="col-12">
@@ -1316,7 +1149,7 @@ const HomePage = () => {
                                 </div>
                                 <div>
                                   <div className="title wow fadeInUp">
-                                    <a href="#">Cameron Williamson</a>
+                                    <Link to="#">Cameron Williamson</Link>
                                   </div>
                                   <p className="wow fadeInUp">Designer</p>
                                 </div>
@@ -1390,7 +1223,7 @@ const HomePage = () => {
                                 </div>
                                 <div>
                                   <div className="title">
-                                    <a href="#">Cameron Williamson</a>
+                                    <Link to="#">Cameron Williamson</Link>
                                   </div>
                                   <p>Designer</p>
                                 </div>
@@ -1498,15 +1331,15 @@ const HomePage = () => {
                                 <div>April 26, 2024</div>
                               </div>
                               <div className="name">
-                                <a href="blog-single.html">
+                                <Link to="blog-single.html">
                                   Chip and Joanna Gaines’ Latest Fixer-Upper Is Open
                                   for Visitors
-                                </a>
+                                </Link>
                               </div>
-                              <a href="#" className="tf-button-no-bg">
+                              <Link to="#" className="tf-button-no-bg">
                                 Read More
                                 <i className="icon-arrow-right-add" />
-                              </a>
+                              </Link>
                             </div>
                           </div>
                         </div>
@@ -1524,14 +1357,14 @@ const HomePage = () => {
                                 <div>April 26, 2024</div>
                               </div>
                               <div className="name">
-                                <a href="blog-single.html">
+                                <Link to="blog-single.html">
                                   Homebuyers Will Be So Thankful To Hear These{" "}
-                                </a>
+                                </Link>
                               </div>
-                              <a href="#" className="tf-button-no-bg">
+                              <Link to="#" className="tf-button-no-bg">
                                 Read More
                                 <i className="icon-arrow-right-add" />
-                              </a>
+                              </Link>
                             </div>
                           </div>
                         </div>
@@ -1549,15 +1382,15 @@ const HomePage = () => {
                                 <div>April 26, 2024</div>
                               </div>
                               <div className="name">
-                                <a href="blog-single.html">
+                                <Link to="blog-single.html">
                                   That’s Life! Frank Sinatra’s Former Los
                                   Angeles-Area{" "}
-                                </a>
+                                </Link>
                               </div>
-                              <a href="#" className="tf-button-no-bg">
+                              <Link to="#" className="tf-button-no-bg">
                                 Read More
                                 <i className="icon-arrow-right-add" />
-                              </a>
+                              </Link>
                             </div>
                           </div>
                         </div>
@@ -1575,15 +1408,15 @@ const HomePage = () => {
                                 <div>April 26, 2024</div>
                               </div>
                               <div className="name">
-                                <a href="blog-single.html">
+                                <Link to="blog-single.html">
                                   Affordability crisis buyers and renters turn to
                                   tiny living
-                                </a>
+                                </Link>
                               </div>
-                              <a href="#" className="tf-button-no-bg">
+                              <Link to="#" className="tf-button-no-bg">
                                 Read More
                                 <i className="icon-arrow-right-add" />
-                              </a>
+                              </Link>
                             </div>
                           </div>
                         </div>
@@ -1598,15 +1431,15 @@ const HomePage = () => {
                                 <div>April 26, 2024</div>
                               </div>
                               <div className="name">
-                                <a href="blog-single.html">
+                                <Link to="blog-single.html">
                                   That’s Life! Frank Sinatra’s Former Los
                                   Angeles-Area{" "}
-                                </a>
+                                </Link>
                               </div>
-                              <a href="#" className="tf-button-no-bg">
+                              <Link to="#" className="tf-button-no-bg">
                                 Read More
                                 <i className="icon-arrow-right-add" />
-                              </a>
+                              </Link>
                             </div>
                           </div>
                         </div>
@@ -1645,9 +1478,9 @@ const HomePage = () => {
           <p>Loading properties...</p>
         ) : properties.length > 0 ? (
           properties.map(property => (
-            <a href="#" key={property.id}>
+            <Link to="#" key={property.id}>
               {property.property_name}
-            </a>
+            </Link>
           ))
         ) : (
           <p>No properties available at the moment.</p>
@@ -1659,132 +1492,132 @@ const HomePage = () => {
                         <div className="widget-content-inner">
                           <div className="gird-tab-search">
                             <div className="item">
-                              <a href="#">Real estate NSW</a>
-                              <a href="#">Real estate VIC</a>
-                              <a href="#">Real estate QLD</a>
-                              <a href="#">Real estate WA</a>
-                              <a href="#">Real estate SA</a>
-                              <a href="#">Real estate TAS</a>
+                              <Link to="#">Real estate NSW</Link>
+                              <Link to="#">Real estate VIC</Link>
+                              <Link to="#">Real estate QLD</Link>
+                              <Link to="#">Real estate WA</Link>
+                              <Link to="#">Real estate SA</Link>
+                              <Link to="#">Real estate TAS</Link>
                             </div>
                             <div className="item">
-                              <a href="#">Real estate ACT</a>
-                              <a href="#">Real estate NT</a>
-                              <a href="#">Real estate Sydney</a>
-                              <a href="#">Real estate Melbourne</a>
-                              <a href="#">Real estate Brisbane</a>
-                              <a href="#">Real estate Perth</a>
+                              <Link to="#">Real estate ACT</Link>
+                              <Link to="#">Real estate NT</Link>
+                              <Link to="#">Real estate Sydney</Link>
+                              <Link to="#">Real estate Melbourne</Link>
+                              <Link to="#">Real estate Brisbane</Link>
+                              <Link to="#">Real estate Perth</Link>
                             </div>
                             <div className="item">
-                              <a href="#">Real estate Adelaide</a>
-                              <a href="#">Real estate Hobart</a>
-                              <a href="#">Real estate Canberra</a>
-                              <a href="#">Real estate Darwin</a>
-                              <a href="#">Real estate ACT</a>
-                              <a href="#">Real estate NT</a>
+                              <Link to="#">Real estate Adelaide</Link>
+                              <Link to="#">Real estate Hobart</Link>
+                              <Link to="#">Real estate Canberra</Link>
+                              <Link to="#">Real estate Darwin</Link>
+                              <Link to="#">Real estate ACT</Link>
+                              <Link to="#">Real estate NT</Link>
                             </div>
                             <div className="item">
-                              <a href="#">Real estate NSW</a>
-                              <a href="#">Real estate VIC</a>
-                              <a href="#">Real estate QLD</a>
-                              <a href="#">Real estate WA</a>
-                              <a href="#">Real estate SA</a>
-                              <a href="#">Real estate TAS</a>
+                              <Link to="#">Real estate NSW</Link>
+                              <Link to="#">Real estate VIC</Link>
+                              <Link to="#">Real estate QLD</Link>
+                              <Link to="#">Real estate WA</Link>
+                              <Link to="#">Real estate SA</Link>
+                              <Link to="#">Real estate TAS</Link>
                             </div>
                             <div className="item">
-                              <a href="#">Real estate ACT</a>
-                              <a href="#">Real estate NT</a>
-                              <a href="#">Real estate Sydney</a>
-                              <a href="#">Real estate Melbourne</a>
-                              <a href="#">Real estate Brisbane</a>
-                              <a href="#">Real estate Perth</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="widget-content-inner">
-                          <div className="gird-tab-search">
-                            <div className="item">
-                              <a href="#">Real estate NSW</a>
-                              <a href="#">Real estate VIC</a>
-                              <a href="#">Real estate QLD</a>
-                              <a href="#">Real estate WA</a>
-                              <a href="#">Real estate SA</a>
-                              <a href="#">Real estate TAS</a>
-                            </div>
-                            <div className="item">
-                              <a href="#">Real estate ACT</a>
-                              <a href="#">Real estate NT</a>
-                              <a href="#">Real estate Sydney</a>
-                              <a href="#">Real estate Melbourne</a>
-                              <a href="#">Real estate Brisbane</a>
-                              <a href="#">Real estate Perth</a>
-                            </div>
-                            <div className="item">
-                              <a href="#">Real estate Adelaide</a>
-                              <a href="#">Real estate Hobart</a>
-                              <a href="#">Real estate Canberra</a>
-                              <a href="#">Real estate Darwin</a>
-                              <a href="#">Real estate ACT</a>
-                              <a href="#">Real estate NT</a>
-                            </div>
-                            <div className="item">
-                              <a href="#">Real estate NSW</a>
-                              <a href="#">Real estate VIC</a>
-                              <a href="#">Real estate QLD</a>
-                              <a href="#">Real estate WA</a>
-                              <a href="#">Real estate SA</a>
-                              <a href="#">Real estate TAS</a>
-                            </div>
-                            <div className="item">
-                              <a href="#">Real estate ACT</a>
-                              <a href="#">Real estate NT</a>
-                              <a href="#">Real estate Sydney</a>
-                              <a href="#">Real estate Melbourne</a>
-                              <a href="#">Real estate Brisbane</a>
-                              <a href="#">Real estate Perth</a>
+                              <Link to="#">Real estate ACT</Link>
+                              <Link to="#">Real estate NT</Link>
+                              <Link to="#">Real estate Sydney</Link>
+                              <Link to="#">Real estate Melbourne</Link>
+                              <Link to="#">Real estate Brisbane</Link>
+                              <Link to="#">Real estate Perth</Link>
                             </div>
                           </div>
                         </div>
                         <div className="widget-content-inner">
                           <div className="gird-tab-search">
                             <div className="item">
-                              <a href="#">Real estate NSW</a>
-                              <a href="#">Real estate VIC</a>
-                              <a href="#">Real estate QLD</a>
-                              <a href="#">Real estate WA</a>
-                              <a href="#">Real estate SA</a>
-                              <a href="#">Real estate TAS</a>
+                              <Link to="#">Real estate NSW</Link>
+                              <Link to="#">Real estate VIC</Link>
+                              <Link to="#">Real estate QLD</Link>
+                              <Link to="#">Real estate WA</Link>
+                              <Link to="#">Real estate SA</Link>
+                              <Link to="#">Real estate TAS</Link>
                             </div>
                             <div className="item">
-                              <a href="#">Real estate ACT</a>
-                              <a href="#">Real estate NT</a>
-                              <a href="#">Real estate Sydney</a>
-                              <a href="#">Real estate Melbourne</a>
-                              <a href="#">Real estate Brisbane</a>
-                              <a href="#">Real estate Perth</a>
+                              <Link to="#">Real estate ACT</Link>
+                              <Link to="#">Real estate NT</Link>
+                              <Link to="#">Real estate Sydney</Link>
+                              <Link to="#">Real estate Melbourne</Link>
+                              <Link to="#">Real estate Brisbane</Link>
+                              <Link to="#">Real estate Perth</Link>
                             </div>
                             <div className="item">
-                              <a href="#">Real estate Adelaide</a>
-                              <a href="#">Real estate Hobart</a>
-                              <a href="#">Real estate Canberra</a>
-                              <a href="#">Real estate Darwin</a>
-                              <a href="#">Real estate ACT</a>
-                              <a href="#">Real estate NT</a>
+                              <Link to="#">Real estate Adelaide</Link>
+                              <Link to="#">Real estate Hobart</Link>
+                              <Link to="#">Real estate Canberra</Link>
+                              <Link to="#">Real estate Darwin</Link>
+                              <Link to="#">Real estate ACT</Link>
+                              <Link to="#">Real estate NT</Link>
                             </div>
                             <div className="item">
-                              <a href="#">Real estate NSW</a>
-                              <a href="#">Real estate VIC</a>
-                              <a href="#">Real estate QLD</a>
-                              <a href="#">Real estate WA</a>
-                              <a href="#">Real estate SA</a>
-                              <a href="#">Real estate TAS</a>
+                              <Link to="#">Real estate NSW</Link>
+                              <Link to="#">Real estate VIC</Link>
+                              <Link to="#">Real estate QLD</Link>
+                              <Link to="#">Real estate WA</Link>
+                              <Link to="#">Real estate SA</Link>
+                              <Link to="#">Real estate TAS</Link>
                             </div>
                             <div className="item">
-                              <a href="#">Real estate ACT</a>
-                              <a href="#">Real estate NT</a>
-                              <a href="#">Real estate Sydney</a>
-                              <a href="#">Real estate Melbourne</a>
-                              <a href="#">Real estate Brisbane</a>
-                              <a href="#">Real estate Perth</a>
+                              <Link to="#">Real estate ACT</Link>
+                              <Link to="#">Real estate NT</Link>
+                              <Link to="#">Real estate Sydney</Link>
+                              <Link to="#">Real estate Melbourne</Link>
+                              <Link to="#">Real estate Brisbane</Link>
+                              <Link to="#">Real estate Perth</Link>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="widget-content-inner">
+                          <div className="gird-tab-search">
+                            <div className="item">
+                              <Link to="#">Real estate NSW</Link>
+                              <Link to="#">Real estate VIC</Link>
+                              <Link to="#">Real estate QLD</Link>
+                              <Link to="#">Real estate WA</Link>
+                              <Link to="#">Real estate SA</Link>
+                              <Link to="#">Real estate TAS</Link>
+                            </div>
+                            <div className="item">
+                              <Link to="#">Real estate ACT</Link>
+                              <Link to="#">Real estate NT</Link>
+                              <Link to="#">Real estate Sydney</Link>
+                              <Link to="#">Real estate Melbourne</Link>
+                              <Link to="#">Real estate Brisbane</Link>
+                              <Link to="#">Real estate Perth</Link>
+                            </div>
+                            <div className="item">
+                              <Link to="#">Real estate Adelaide</Link>
+                              <Link to="#">Real estate Hobart</Link>
+                              <Link to="#">Real estate Canberra</Link>
+                              <Link to="#">Real estate Darwin</Link>
+                              <Link to="#">Real estate ACT</Link>
+                              <Link to="#">Real estate NT</Link>
+                            </div>
+                            <div className="item">
+                              <Link to="#">Real estate NSW</Link>
+                              <Link to="#">Real estate VIC</Link>
+                              <Link to="#">Real estate QLD</Link>
+                              <Link to="#">Real estate WA</Link>
+                              <Link to="#">Real estate SA</Link>
+                              <Link to="#">Real estate TAS</Link>
+                            </div>
+                            <div className="item">
+                              <Link to="#">Real estate ACT</Link>
+                              <Link to="#">Real estate NT</Link>
+                              <Link to="#">Real estate Sydney</Link>
+                              <Link to="#">Real estate Melbourne</Link>
+                              <Link to="#">Real estate Brisbane</Link>
+                              <Link to="#">Real estate Perth</Link>
                             </div>
                           </div>
                         </div>
@@ -1807,10 +1640,10 @@ const HomePage = () => {
                           We only work with the best companies around the globe
                         </div>
                       </div>
-                      <a href="#" className="tf-button-primary wow fadeInRight">
+                      <Link to="#" className="tf-button-primary wow fadeInRight">
                         Register Now
                         <i className="icon-arrow-right-add" />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -1847,9 +1680,9 @@ const HomePage = () => {
       <div className="modal fade modalCenter" id="modallogin">
         <div className="modal-dialog modal-dialog-centered" role="document">
           <div className="modal-content modal-sm">
-            <a href="#" className="btn-hide-modal" data-bs-dismiss="modal">
+            <Link to="#" className="btn-hide-modal" data-bs-dismiss="modal">
               <i className="icon-close" />
-            </a>
+            </Link>
             <div className="image-left">
               <img src="images/section/login.jpg" alt="" />
               <h3>Welcome to Your Real Estate Website</h3>
@@ -1889,9 +1722,9 @@ const HomePage = () => {
                       <span className="btn-checkbox" />
                     </label>
                   </div>
-                  <a href="#" className="lost-password">
+                  <Link to="#" className="lost-password">
                     Lost your password?
-                  </a>
+                  </Link>
                 </div>
                 <div className="button-submit w-full">
                   <button className="tf-button-primary w-full" type="submit">
@@ -1902,31 +1735,31 @@ const HomePage = () => {
               </form>
               <div className="flex items-center justify-center">
                 <p>Not a member?</p>
-                <a
-                  href="#"
+                <Link
+                  to="#"
                   className="btn-show-register"
                   data-bs-dismiss="modal"
                   data-bs-toggle="modal"
                   data-bs-target="#modalregister"
                 >
                   Register here
-                </a>
+                </Link>
               </div>
               <ul className="wg-social-1">
                 <li>
-                  <a href="#">
+                  <Link to="#">
                     <i className="flaticon-google" />
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">
+                  <Link to="#">
                     <i className="flaticon-twitter" />
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">
+                  <Link to="#">
                     <i className="flaticon-facebook" />
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -1938,9 +1771,9 @@ const HomePage = () => {
       <div className="modal fade modalCenter" id="modalregister">
         <div className="modal-dialog modal-dialog-centered" role="document">
           <div className="modal-content modal-sm">
-            <a href="#" className="btn-hide-modal" data-bs-dismiss="modal">
+            <Link to="#" className="btn-hide-modal" data-bs-dismiss="modal">
               <i className="icon-close" />
-            </a>
+            </Link>
             <div className="image-left">
               <img src="images/section/login.jpg" alt="" />
               <h3>Welcome to Your Real Estate Website</h3>
@@ -2014,15 +1847,15 @@ const HomePage = () => {
               </form>
               <div className="flex items-center justify-center">
                 <p>Have an account?</p>
-                <a
-                  href="#"
+                <Link
+                  to="#"
                   className="btn-show-register"
                   data-bs-dismiss="modal"
                   data-bs-toggle="modal"
                   data-bs-target="#modallogin"
                 >
                   Log in
-                </a>
+                </Link>
               </div>
             </div>
           </div>

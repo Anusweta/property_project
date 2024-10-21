@@ -1,3 +1,6 @@
+import { Link } from 'react-router-dom';
+ 
+ 
  const Footer = () => {
     return(
         <>
@@ -6,36 +9,36 @@
               <div className="footer-inner-wrap">
                 <div className="top-footer">
                   <div className="logo-footer">
-                    <a href="index.html">
+                    <Link to="index.html">
                       <img
                         id="logo-footer"
                         src="images/logo/logo-footer.svg"
                         alt="images"
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div className="wg-social">
                     <span>Follow Us</span>
                     <ul className="list-social">
                       <li>
-                        <a href="#">
+                        <Link to="#">
                           <i className="icon-facebook" />
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="#">
+                        <Link to="#">
                           <i className="icon-twitter" />
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="#">
+                        <Link to="#">
                           <i className="icon-instagram" />
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="#">
+                        <Link to="#">
                           <i className="icon-linkedin2" />
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -70,22 +73,22 @@
                     <div className="ft-title">Discover</div>
                     <ul className="navigation-menu-footer">
                       <li>
-                        <a href="property-map-v1.html">Miami</a>
+                        <Link to="property-map-v1.html">Miami</Link>
                       </li>
                       <li>
-                        <a href="property-map-v1.html">New York</a>
+                        <Link to="property-map-v1.html">New York</Link>
                       </li>
                       <li>
-                        <a href="property-map-v1.html">Chicago</a>
+                        <Link to="property-map-v1.html">Chicago</Link>
                       </li>
                       <li>
-                        <a href="property-map-v1.html">Sacramento</a>
+                        <Link to="property-map-v1.html">Sacramento</Link>
                       </li>
                       <li>
-                        <a href="property-map-v1.html">Los Angeles</a>
+                        <Link to="property-map-v1.html">Los Angeles</Link>
                       </li>
                       <li>
-                        <a href="property-map-v1.html">San Francisco</a>
+                        <Link to="property-map-v1.html">San Francisco</Link>
                       </li>
                     </ul>
                   </div>
@@ -93,25 +96,25 @@
                     <div className="ft-title">Quick Links</div>
                     <ul className="navigation-menu-footer">
                       <li>
-                        <a href="about.html">About</a>
+                        <Link to="about.html">About</Link>
                       </li>
                       <li>
-                        <a href="contact.html">Contact</a>
+                        <Link to="contact.html">Contact</Link>
                       </li>
                       <li>
-                        <a href="faq.html">Faq</a>
+                        <Link to="faq.html">Faq</Link>
                       </li>
                       <li>
-                        <a href="blog-list-v1.html">Blog</a>
+                        <Link to="blog-list-v1.html">Blog</Link>
                       </li>
                       <li>
-                        <a href="pricing.html">Pricing Plans</a>
+                        <Link to="pricing.html">Pricing Plans</Link>
                       </li>
                       <li>
-                        <a href="#">Privacy Policy</a>
+                        <Link to="#">Privacy Policy</Link>
                       </li>
                       <li>
-                        <a href="#">Terms &amp; Conditions</a>
+                        <Link to="#">Terms &amp; Conditions</Link>
                       </li>
                     </ul>
                   </div>
@@ -137,7 +140,7 @@
                     <div className="ft-title">Get the app</div>
                     <ul className="ft-download">
                       <li>
-                        <a href="#">
+                        <Link to="#">
                           <div className="icon">
                             <i className="icon-appleinc" />
                           </div>
@@ -145,10 +148,10 @@
                             <div>Download on the</div>
                             <div>Apple Store</div>
                           </div>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="#">
+                        <Link to="#">
                           <div className="icon">
                             <i className="icon-ch-play" />
                           </div>
@@ -156,7 +159,7 @@
                             <div>Get in on</div>
                             <div>Google Play</div>
                           </div>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>

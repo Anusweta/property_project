@@ -1,3 +1,6 @@
+
+import { Link } from 'react-router-dom';
+
 const PropertySingle = () => {
     return (
         <>
@@ -10,168 +13,109 @@ const PropertySingle = () => {
               <div className="header-inner">
                 <div className="header-inner-wrap">
                   <div id="site-logo">
-                    <a href="index.html" rel="home">
+                    <Link to="index.html" rel="home">
                       <img
                         className="d-block"
                         id="logo-header"
                         src="images/logo/logo.svg"
                         alt=""
                       />
-                    </a>
+                    </Link>
                   </div>
                   <nav className="main-menu">
                     <ul className="navigation">
                       <li className="has-children">
-                        <a href="javascript:void(0);">Home</a>
+                        <Link to="/">Home</Link>
                         <ul>
-                        <li className="current">
-                          <a href="home" className="current">
-                            Home Page 01
-                          </a>
-                        </li>
                         
                       </ul>
                     </li>
                     <li className="has-children">
-                      <a href="javascript:void(0);">Property</a>
+                      <Link to="javascript:void(0);">Property</Link>
                       <ul className="mega-menu">
                         <li>
                           <ul>
                             <li className="title">List view</li>
                             <li>
-                              <a href="PropertyList">Property List 01</a>
+                              <Link to="/PropertyList">Property List 01</Link>
                             </li>
                             
                           </ul>
                         </li>
                         <li>
-                          <ul>
-                            <li className="title">Grid view</li>
-                            <li>
-                              <a href="property-grid-v1.html">Property Grid 01</a>
-                            </li>
-                            <li>
-                              <a href="property-grid-v2.html">Property Grid 02</a>
-                            </li>
-                            <li>
-                              <a href="property-grid-v3.html">Property Grid 03</a>
-                            </li>
-                            <li>
-                              <a href="property-grid-v4.html">Property Grid 04</a>
-                            </li>
-                          </ul>
+                          
                         </li>
                         <li>
                           <ul>
                             <li className="title">Single view</li>
                             <li>
-                              <a href="PropertySingle">
+                              <Link to="/PropertySingle">
                                 Property Single 01
-                              </a>
+                              </Link>
                             </li>
                                                      </ul>
                         </li>
                         <li>
-                          <ul>
-                            <li className="title">Map Style</li>
-                              <li>
-                                <a href="property-map-v1.html">Property Map 01</a>
-                              </li>
-                              <li>
-                                <a href="property-map-v2.html">Property Map 02</a>
-                              </li>
-                              <li>
-                                <a href="property-map-v3.html">Property Map 03</a>
-                              </li>
-                              <li>
-                                <a href="property-map-v4.html">Property Map 04</a>
-                              </li>
-                            </ul>
                           </li>
                         </ul>
                       </li>
                       <li className="has-children">
-                        <a href="javascript:void(0);">Realtor</a>
+                        <Link to="javascript:void(0);">Pages</Link>
                         <ul>
                           <li>
-                            <a href="agent-list.html">Agent List</a>
+                            <Link to="about.html">About Us</Link>
                           </li>
                           <li>
-                            <a href="agent-single.html">Agent Single</a>
+                            <Link to="compare.html">Compare</Link>
                           </li>
                           <li>
-                            <a href="agency-list.html">Agency List</a>
+                            <Link to="pricing.html">Pricing Packages</Link>
                           </li>
                           <li>
-                            <a href="agency-single.html">Agency Single</a>
+                            <Link to="faq.html">FAQ Page</Link>
+                          </li>
+                          <li>
+                            <Link to="404.html">404 Page</Link>
+                          </li>
+                          <li>
+                            <Link to="ui-elements.html">UI Elements</Link>
+                          </li>
+                          <li>
+                            <Link to="dashboard.html">Dashboard</Link>
                           </li>
                         </ul>
                       </li>
                       <li className="has-children">
-                        <a href="javascript:void(0);">Pages</a>
+                        <Link to="javascript:void(0);">Shop</Link>
                         <ul>
                           <li>
-                            <a href="about.html">About Us</a>
+                            <Link to="shop-list.html">Shop List</Link>
                           </li>
                           <li>
-                            <a href="compare.html">Compare</a>
+                            <Link to="shop-single.html">Shop Single</Link>
                           </li>
                           <li>
-                            <a href="pricing.html">Pricing Packages</a>
+                            <Link to="shop-cart.html">Shop Cart</Link>
                           </li>
                           <li>
-                            <a href="faq.html">FAQ Page</a>
+                            <Link to="shop-checkout.html">Shop Checkout</Link>
                           </li>
                           <li>
-                            <a href="404.html">404 Page</a>
-                          </li>
-                          <li>
-                            <a href="ui-elements.html">UI Elements</a>
-                          </li>
-                          <li>
-                            <a href="dashboard.html">Dashboard</a>
+                            <Link to="shop-order.html">Shop Order</Link>
                           </li>
                         </ul>
                       </li>
                       <li className="has-children">
-                        <a href="javascript:void(0);">Shop</a>
+                        <Link to="javascript:void(0);">Blog</Link>
                         <ul>
                           <li>
-                            <a href="shop-list.html">Shop List</a>
+                            <Link to="blog-list-v1.html">Blog List 01</Link>
                           </li>
-                          <li>
-                            <a href="shop-single.html">Shop Single</a>
-                          </li>
-                          <li>
-                            <a href="shop-cart.html">Shop Cart</a>
-                          </li>
-                          <li>
-                            <a href="shop-checkout.html">Shop Checkout</a>
-                          </li>
-                          <li>
-                            <a href="shop-order.html">Shop Order</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li className="has-children">
-                        <a href="javascript:void(0);">Blog</a>
-                        <ul>
-                          <li>
-                            <a href="blog-list-v1.html">Blog List 01</a>
-                          </li>
-                          <li>
-                            <a href="blog-list-v2.html">Blog List 02</a>
-                          </li>
-                          <li>
-                            <a href="blog-list-v3.html">Blog List 03</a>
-                          </li>
-                          <li>
-                            <a href="blog-single.html">Blog Single</a>
-                          </li>
+                         
                         </ul>
                       </li>
                       <li>
-                        <a href="contact.html">Contact</a>
+                        <Link to="contact.html">Contact</Link>
                       </li>
                     </ul>
                   </nav>
@@ -192,12 +136,12 @@ const PropertySingle = () => {
                       </div>
                     </div>
                     <div className="header-btn">
-                      <a
-                        href="dashboard-add-properties.html"
+                      <Link
+                        to="dashboard-add-properties.html"
                         className="tf-button-default"
                       >
                         Add Listing
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <a className="mobile-nav-toggler mobile-button" href="#menu" />
@@ -210,38 +154,7 @@ const PropertySingle = () => {
                 <ul>
                   <li>
                     <span>Home</span>
-                    <ul>
-                      <li>
-                        <a href="index.html">Home Page 01</a>
-                      </li>
-                      <li>
-                        <a href="home-02.html">Home Page 02</a>
-                      </li>
-                      <li>
-                        <a href="home-03.html">Home Page 03</a>
-                      </li>
-                      <li>
-                        <a href="home-04.html">Home Page 04</a>
-                      </li>
-                      <li>
-                        <a href="home-05.html">Home Page 05</a>
-                      </li>
-                      <li>
-                        <a href="home-06.html">Home Page 06</a>
-                      </li>
-                      <li>
-                        <a href="home-07.html">Home Page 07</a>
-                      </li>
-                      <li>
-                        <a href="home-08.html">Home Page 08</a>
-                      </li>
-                      <li>
-                        <a href="home-09.html">Home Page 09</a>
-                      </li>
-                      <li>
-                        <a href="home-10.html">Home Page 10</a>
-                      </li>
-                    </ul>
+                   
                   </li>
                   <li className="current">
                     <span>Property</span>
@@ -250,118 +163,53 @@ const PropertySingle = () => {
                         <span>List view</span>
                         <ul>
                           <li>
-                            <a href="property-list-v1.html">Property List 01</a>
+                            <Link to="/PropertyList">Property List 01</Link>
                           </li>
-                          <li>
-                            <a href="property-list-v2.html">Property List 02</a>
-                          </li>
-                          <li>
-                            <a href="property-list-v3.html">Property List 03</a>
-                          </li>
+                         
                         </ul>
                       </li>
                       <li>
-                        <span>Grid view</span>
-                        <ul>
-                          <li>
-                            <a href="property-grid-v1.html">Property Grid 01</a>
-                          </li>
-                          <li>
-                            <a href="property-grid-v2.html">Property Grid 02</a>
-                          </li>
-                          <li>
-                            <a href="property-grid-v3.html">Property Grid 03</a>
-                          </li>
-                          <li>
-                            <a href="property-grid-v4.html">Property Grid 04</a>
-                          </li>
-                        </ul>
+                       
                       </li>
                       <li className="current">
                         <span>Single view</span>
                         <ul>
                           <li className="current">
-                            <a href="property-single-v1.html">Property Single 01</a>
+                            <Link to="/PropertySingle">Property Single 01</Link>
                           </li>
-                          <li>
-                            <a href="property-single-v2.html">Property Single 02</a>
-                          </li>
-                          <li>
-                            <a href="property-single-v3.html">Property Single 03</a>
-                          </li>
-                          <li>
-                            <a href="property-single-v4.html">Property Single 04</a>
-                          </li>
-                          <li>
-                            <a href="property-single-v5.html">Property Single 05</a>
-                          </li>
-                          <li>
-                            <a href="property-single-v6.html">Property Single 06</a>
-                          </li>
-                          <li>
-                            <a href="property-single-v7.html">Property Single 07</a>
-                          </li>
+                         
                         </ul>
                       </li>
                       <li>
-                        <span>Map Style</span>
-                        <ul>
-                          <li>
-                            <a href="property-map-v1.html">Property Map 01</a>
-                          </li>
-                          <li>
-                            <a href="property-map-v2.html">Property Map 02</a>
-                          </li>
-                          <li>
-                            <a href="property-map-v3.html">Property Map 03</a>
-                          </li>
-                          <li>
-                            <a href="property-map-v4.html">Property Map 04</a>
-                          </li>
-                        </ul>
+                       
                       </li>
                     </ul>
                   </li>
                   <li>
-                    <span>Realtor</span>
-                    <ul>
-                      <li>
-                        <a href="agent-list.html">Agent List</a>
-                      </li>
-                      <li>
-                        <a href="agent-single.html">Agent Single</a>
-                      </li>
-                      <li>
-                        <a href="agency-list.html">Agency List</a>
-                      </li>
-                      <li>
-                        <a href="agency-single.html">Agency Single</a>
-                      </li>
-                    </ul>
-                  </li>
+                                     </li>
                   <li>
                     <span>Pages</span>
                     <ul>
                       <li>
-                        <a href="about.html">About Us</a>
+                        <Link to="about.html">About Us</Link>
                       </li>
                       <li>
-                        <a href="compare.html">Compare</a>
+                        <Link to="compare.html">Compare</Link>
                       </li>
                       <li>
-                        <a href="pricing.html">Pricing Packages</a>
+                        <Link to="pricing.html">Pricing Packages</Link>
                       </li>
                       <li>
-                        <a href="faq.html">FAQ Page</a>
+                        <Link to="faq.html">FAQ Page</Link>
                       </li>
                       <li>
-                        <a href="404.html">404 Page</a>
+                        <Link to="404.html">404 Page</Link>
                       </li>
                       <li>
-                        <a href="ui-elements.html">UI Elements</a>
+                        <Link to="ui-elements.html">UI Elements</Link>
                       </li>
                       <li>
-                        <a href="dashboard.html">Dashboard</a>
+                        <Link to="dashboard.html">Dashboard</Link>
                       </li>
                     </ul>
                   </li>
@@ -369,19 +217,19 @@ const PropertySingle = () => {
                     <span>Shop</span>
                     <ul>
                       <li>
-                        <a href="shop-list.html">Shop List</a>
+                        <Link to="shop-list.html">Shop List</Link>
                       </li>
                       <li>
-                        <a href="shop-single.html">Shop Single</a>
+                        <Link to="shop-single.html">Shop Single</Link>
                       </li>
                       <li>
-                        <a href="shop-cart.html">Shop Cart</a>
+                        <Link to="shop-cart.html">Shop Cart</Link>
                       </li>
                       <li>
-                        <a href="shop-checkout.html">Shop Checkout</a>
+                        <Link to="shop-checkout.html">Shop Checkout</Link>
                       </li>
                       <li>
-                        <a href="shop-order.html">Shop Order</a>
+                        <Link to="shop-order.html">Shop Order</Link>
                       </li>
                     </ul>
                   </li>
@@ -389,21 +237,21 @@ const PropertySingle = () => {
                     <span>Blog</span>
                     <ul>
                       <li>
-                        <a href="blog-list-v1.html">Blog List 01</a>
+                        <Link to="blog-list-v1.html">Blog List 01</Link>
                       </li>
                       <li>
-                        <a href="blog-list-v2.html">Blog List 02</a>
+                        <Link to="blog-list-v2.html">Blog List 02</Link>
                       </li>
                       <li>
-                        <a href="blog-list-v3.html">Blog List 03</a>
+                        <Link to="blog-list-v3.html">Blog List 03</Link>
                       </li>
                       <li>
-                        <a href="blog-single.html">Blog Single</a>
+                        <Link to="blog-single.html">Blog Single</Link>
                       </li>
                     </ul>
                   </li>
                   <li>
-                    <a href="contact.html">Contact</a>
+                    <Link to="contact.html">Contact</Link>
                   </li>
                 </ul>
               </nav>
@@ -422,7 +270,7 @@ const PropertySingle = () => {
                       <div className="flex items-center justify-between gap30 flex-wrap pt-30 pb-30">
                         <ul className="breadcrumbs style-1 justify-start">
                           <li>
-                            <a href="index.html">Home</a>
+                            <Link to="index.html">Home</Link>
                           </li>
                           <li>/</li>
                           <li>Property List</li>
@@ -460,56 +308,56 @@ const PropertySingle = () => {
                     <div className="col-12">
                       <div className="wrap-gallery-image">
                         <div className="list-tags type-1">
-                          <a href="#" className="tags-item for-sell">
+                          <Link to="#" className="tags-item for-sell">
                             FOR RENT
-                          </a>
-                          <a href="#" className="tags-item featured">
+                          </Link>
+                          <Link to="#" className="tags-item featured">
                             FEATURED
-                          </a>
+                          </Link>
                         </div>
-                        <a
-                          href="images/house/property-detail-1.jpg"
+                        <Link
+                          to="images/house/property-detail-1.jpg"
                           className="item-1"
                           data-fancybox="gallery"
                         >
                           <img src="images/house/property-detail-1.jpg" alt="" />
-                        </a>
-                        <a
-                          href="images/house/property-detail-2.jpg"
+                        </Link>
+                        <Link
+                          to="images/house/property-detail-2.jpg"
                           className="item-2"
                           data-fancybox="gallery"
                         >
                           <img src="images/house/property-detail-2.jpg" alt="" />
-                        </a>
-                        <a
-                          href="images/house/property-detail-3.jpg"
+                        </Link>
+                        <Link
+                          to="images/house/property-detail-3.jpg"
                           className="item-3"
                           data-fancybox="gallery"
                         >
                           <img src="images/house/property-detail-3.jpg" alt="" />
-                        </a>
-                        <a
-                          href="images/house/property-detail-4.jpg"
+                        </Link>
+                        <Link
+                          to="images/house/property-detail-4.jpg"
                           className="item-4"
                           data-fancybox="gallery"
                         >
                           <img src="images/house/property-detail-4.jpg" alt="" />
-                        </a>
-                        <a
-                          href="images/house/property-detail-5.jpg"
+                        </Link>
+                        <Link
+                          to="images/house/property-detail-5.jpg"
                           className="item-5"
                           data-fancybox="gallery"
                         >
                           <img src="images/house/property-detail-5.jpg" alt="" />
-                        </a>
-                        <a
-                          href="images/house/property-detail-3.jpg"
+                        </Link>
+                        <Link
+                          to="images/house/property-detail-3.jpg"
                           className="more-photos"
                           data-fancybox="gallery"
                         >
                           <i className="flaticon-gallery" />
                           <p>42 Photos</p>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div className="col-xl-8">
@@ -589,10 +437,10 @@ const PropertySingle = () => {
                         <div className="address">
                           <div className="flex items-center justify-between gap30 flex-wrap wow fadeInUp">
                             <h4 className="mb-0">Address</h4>
-                            <a href="#" className="tf-button-green">
+                            <Link to="#" className="tf-button-green">
                               <i className="flaticon-location" />
                               Open On Google Maps
-                            </a>
+                            </Link>
                           </div>
                           <div className="list-item">
                             <div className="item wow fadeInUp">
@@ -624,7 +472,7 @@ const PropertySingle = () => {
                         <div className="attachments">
                           <h4 className="wow fadeInUp">Property Attachments</h4>
                           <div className="wrap-file-item wow fadeInUp">
-                            <a href="#" className="file-item">
+                            <Link to="#" className="file-item">
                               <div className="icon">
                                 <img src="images/image-box/file-pdf.svg" alt="" />
                               </div>
@@ -632,8 +480,8 @@ const PropertySingle = () => {
                                 <div className="name">Ultra-Demo-PDF File</div>
                                 <div className="size">140.56 kb</div>
                               </div>
-                            </a>
-                            <a href="#" className="file-item">
+                            </Link>
+                            <Link to="#" className="file-item">
                               <div className="icon">
                                 <img src="images/image-box/file-pdf.svg" alt="" />
                               </div>
@@ -641,7 +489,7 @@ const PropertySingle = () => {
                                 <div className="name">Ultra-Demo-PDF File</div>
                                 <div className="size">140.56 kb</div>
                               </div>
-                            </a>
+                            </Link>
                           </div>
                         </div>
                         <div className="details">
@@ -1324,9 +1172,9 @@ const PropertySingle = () => {
                         <div className="contact-info">
                           <div className="flex items-center justify-between gap30 flex-wrap wow fadeInUp">
                             <h4 className="mb-0">Contact Information</h4>
-                            <a href="#" className="tf-button-green">
+                            <Link to="#" className="tf-button-green">
                               View Listing
-                            </a>
+                            </Link>
                           </div>
                           <div className="person wow fadeInUp">
                             <div className="image">
@@ -1334,7 +1182,7 @@ const PropertySingle = () => {
                             </div>
                             <div className="content">
                               <div className="name">
-                                <a href="#">Jane Cooper</a>
+                                <Link to="#">Jane Cooper</Link>
                               </div>
                               <p>sale@justhome.com</p>
                               <p>3-596 95 38 12</p>
@@ -1445,14 +1293,14 @@ const PropertySingle = () => {
                           <h4 className="wow fadeInUp">Video</h4>
                           <div className="video-wrap">
                             <img src="images/image-box/video-2.jpg" alt="" />
-                            <a
-                              href="https://www.youtube.com/watch?v=MLpWrANjFbI"
+                            <Link
+                              to="https://www.youtube.com/watch?v=MLpWrANjFbI"
                               className="popup-youtube"
                             >
                               <div className="icon">
                                 <i className="flaticon-play" />
                               </div>
-                            </a>
+                            </Link>
                           </div>
                         </div>
                         <div className="map">
@@ -1713,9 +1561,9 @@ const PropertySingle = () => {
                         <div className="reviews-wrap">
                           <div className="flex justify-between items-center mb-40 wow fadeInUp">
                             <h4 className="mb-0">4 Reviews</h4>
-                            <a href="#" className="tf-button-green">
+                            <Link to="#" className="tf-button-green">
                               Leave a Review
-                            </a>
+                            </Link>
                           </div>
                           <ul>
                             <li className="wow fadeInUp">
@@ -1731,7 +1579,7 @@ const PropertySingle = () => {
                                   <i className="flaticon-star-1" />
                                 </div>
                                 <div className="name">
-                                  <a href="#">Jane Cooper</a>
+                                  <Link to="#">Jane Cooper</Link>
                                 </div>
                                 <div className="time">April 06, 2024 at 7:55 pm</div>
                                 <p>
@@ -1755,7 +1603,7 @@ const PropertySingle = () => {
                                   <i className="flaticon-star-1" />
                                 </div>
                                 <div className="name">
-                                  <a href="#">Jane Cooper</a>
+                                  <Link to="#">Jane Cooper</Link>
                                 </div>
                                 <div className="time">April 06, 2024 at 7:55 pm</div>
                                 <p>
@@ -1863,12 +1711,12 @@ const PropertySingle = () => {
                               <div className="box-dream has-border wow fadeInUp">
                                 <div className="image">
                                   <div className="list-tags">
-                                    <a href="#" className="tags-item for-sell">
+                                    <Link to="#" className="tags-item for-sell">
                                       FOR RENT
-                                    </a>
-                                    <a href="#" className="tags-item featured">
+                                    </Link>
+                                    <Link to="#" className="tags-item featured">
                                       FEATURED
-                                    </a>
+                                    </Link>
                                   </div>
                                   <div className="button-heart">
                                     <i className="flaticon-heart-1" />
@@ -1920,9 +1768,9 @@ const PropertySingle = () => {
                                 <div className="content">
                                   <div className="head">
                                     <div className="title">
-                                      <a href="property-single-v1.html">
+                                      <Link to="property-single-v1.html">
                                         Home Pitt Street
-                                      </a>
+                                      </Link>
                                     </div>
                                     <div className="price">$815,000</div>
                                   </div>
@@ -1956,9 +1804,9 @@ const PropertySingle = () => {
                               >
                                 <div className="image">
                                   <div className="list-tags">
-                                    <a href="#" className="tags-item for-sell">
+                                    <Link to="#" className="tags-item for-sell">
                                       FOR SELL
-                                    </a>
+                                    </Link>
                                   </div>
                                   <div className="button-heart">
                                     <i className="flaticon-heart-1" />
@@ -2010,9 +1858,9 @@ const PropertySingle = () => {
                                 <div className="content">
                                   <div className="head">
                                     <div className="title">
-                                      <a href="property-single-v1.html">
+                                      <Link to="property-single-v1.html">
                                         Luxury Mansion
-                                      </a>
+                                      </Link>
                                     </div>
                                     <div className="price">$815,000</div>
                                   </div>
@@ -2050,17 +1898,17 @@ const PropertySingle = () => {
                             Request a tour as early as <br />
                             <span>Today at 11:00AM</span>
                           </div>
-                          <a href="#" className="tf-button-primary w-full">
+                          <Link to="#" className="tf-button-primary w-full">
                             Schedule a Tour
                             <i className="icon-arrow-right-add" />
-                          </a>
-                          <a
-                            href="#"
+                          </Link>
+                          <Link
+                            to="#"
                             className="tf-button-primary w-full style-bg-white"
                           >
                             Contact an agent
                             <i className="icon-arrow-right-add" />
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -2097,9 +1945,9 @@ const PropertySingle = () => {
         <div className="modal fade modalCenter" id="modallogin">
           <div className="modal-dialog modal-dialog-centered" role="document">
             <div className="modal-content modal-sm">
-              <a href="#" className="btn-hide-modal" data-bs-dismiss="modal">
+              <Link to="#" className="btn-hide-modal" data-bs-dismiss="modal">
                 <i className="icon-close" />
-              </a>
+              </Link>
               <div className="image-left">
                 <img src="images/section/login.jpg" alt="" />
                 <h3>Welcome to Your Real Estate Website</h3>
@@ -2139,9 +1987,9 @@ const PropertySingle = () => {
                         <span className="btn-checkbox" />
                       </label>
                     </div>
-                    <a href="#" className="lost-password">
+                    <Link to="#" className="lost-password">
                       Lost your password?
-                    </a>
+                    </Link>
                   </div>
                   <div className="button-submit w-full">
                     <button className="tf-button-primary w-full" type="submit">
@@ -2152,31 +2000,31 @@ const PropertySingle = () => {
                 </form>
                 <div className="flex items-center justify-center">
                   <p>Not a member?</p>
-                  <a
-                    href="#"
+                  <Link
+                    to="#"
                     className="btn-show-register"
                     data-bs-dismiss="modal"
                     data-bs-toggle="modal"
                     data-bs-target="#modalregister"
                   >
                     Register here
-                  </a>
+                  </Link>
                 </div>
                 <ul className="wg-social-1">
                   <li>
-                    <a href="#">
+                    <Link to="#">
                       <i className="flaticon-google" />
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">
+                    <Link to="#">
                       <i className="flaticon-twitter" />
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">
+                    <Link to="#">
                       <i className="flaticon-facebook" />
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -2188,9 +2036,9 @@ const PropertySingle = () => {
         <div className="modal fade modalCenter" id="modalregister">
           <div className="modal-dialog modal-dialog-centered" role="document">
             <div className="modal-content modal-sm">
-              <a href="#" className="btn-hide-modal" data-bs-dismiss="modal">
+              <Link to="#" className="btn-hide-modal" data-bs-dismiss="modal">
                 <i className="icon-close" />
-              </a>
+              </Link>
               <div className="image-left">
                 <img src="images/section/login.jpg" alt="" />
                 <h3>Welcome to Your Real Estate Website</h3>
@@ -2264,15 +2112,15 @@ const PropertySingle = () => {
                 </form>
                 <div className="flex items-center justify-center">
                   <p>Have an account?</p>
-                  <a
-                    href="#"
+                  <Link
+                    to="#"
                     className="btn-show-register"
                     data-bs-dismiss="modal"
                     data-bs-toggle="modal"
                     data-bs-target="#modallogin"
                   >
                     Log in
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

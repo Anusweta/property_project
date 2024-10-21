@@ -1,3 +1,6 @@
+import { Link } from 'react-router-dom';
+
+
 const PropertyList = () => {
 
     return (
@@ -12,168 +15,116 @@ const PropertyList = () => {
               <div className="header-inner">
                 <div className="header-inner-wrap">
                   <div id="site-logo">
-                    <a href="index.html" rel="home">
+                    <Link to="index.html" rel="home">
                       <img
                         className="d-block"
                         id="logo-header"
                         src="images/logo/logo.svg"
                         alt=""
                       />
-                    </a>
+                    </Link>
                   </div>
                   <nav className="main-menu">
                     <ul className="navigation">
                       <li className="has-children">
-                        <a href="javascript:void(0);">Home</a>
+                        <Link to="/">Home</Link>
                         <ul>
-                        <li className="current">
-                          <a href="home" className="current">
-                            Home Page 01
-                          </a>
-                        </li>
                         
                       </ul>
                     </li>
                     <li className="has-children">
-                      <a href="javascript:void(0);">Property</a>
+                      <Link to="javascript:void(0);">Property</Link>
                       <ul className="mega-menu">
                         <li>
                           <ul>
                             <li className="title">List view</li>
                             <li>
-                              <a href="PropertyList">Property List 01</a>
+                              <Link to="/PropertyList">Property List 01</Link>
                             </li>
                             
                           </ul>
                         </li>
                         <li>
-                          <ul>
-                            <li className="title">Grid view</li>
-                            <li>
-                              <a href="property-grid-v1.html">Property Grid 01</a>
-                            </li>
-                            <li>
-                              <a href="property-grid-v2.html">Property Grid 02</a>
-                            </li>
-                            <li>
-                              <a href="property-grid-v3.html">Property Grid 03</a>
-                            </li>
-                            <li>
-                              <a href="property-grid-v4.html">Property Grid 04</a>
-                            </li>
-                          </ul>
-                        </li>
+                              </li>
                         <li>
                           <ul>
                             <li className="title">Single view</li>
                             <li>
-                              <a href="PropertySingle">
+                              <Link to="/PropertySingle">
                                 Property Single 01
-                              </a>
+                              </Link>
                             </li>
                                                      </ul>
                         </li>
                         <li>
-                          <ul>
-                            <li className="title">Map Style</li>
-                              <li>
-                                <a href="property-map-v1.html">Property Map 01</a>
-                              </li>
-                              <li>
-                                <a href="property-map-v2.html">Property Map 02</a>
-                              </li>
-                              <li>
-                                <a href="property-map-v3.html">Property Map 03</a>
-                              </li>
-                              <li>
-                                <a href="property-map-v4.html">Property Map 04</a>
-                              </li>
-                            </ul>
                           </li>
                         </ul>
                       </li>
                       <li className="has-children">
-                        <a href="javascript:void(0);">Realtor</a>
+                        <Link to="javascript:void(0);">Pages</Link>
                         <ul>
                           <li>
-                            <a href="agent-list.html">Agent List</a>
+                            <Link to="about.html">About Us</Link>
                           </li>
                           <li>
-                            <a href="agent-single.html">Agent Single</a>
+                            <Link to="compare.html">Compare</Link>
                           </li>
                           <li>
-                            <a href="agency-list.html">Agency List</a>
+                            <Link to="pricing.html">Pricing Packages</Link>
                           </li>
                           <li>
-                            <a href="agency-single.html">Agency Single</a>
+                            <Link to="faq.html">FAQ Page</Link>
+                          </li>
+                          <li>
+                            <Link to="404.html">404 Page</Link>
+                          </li>
+                          <li>
+                            <Link to="ui-elements.html">UI Elements</Link>
+                          </li>
+                          <li>
+                            <Link to="dashboard.html">Dashboard</Link>
                           </li>
                         </ul>
                       </li>
                       <li className="has-children">
-                        <a href="javascript:void(0);">Pages</a>
+                        <Link to="javascript:void(0);">Shop</Link>
                         <ul>
                           <li>
-                            <a href="about.html">About Us</a>
+                            <Link to="shop-list.html">Shop List</Link>
                           </li>
                           <li>
-                            <a href="compare.html">Compare</a>
+                            <Link to="shop-single.html">Shop Single</Link>
                           </li>
                           <li>
-                            <a href="pricing.html">Pricing Packages</a>
+                            <Link to="shop-cart.html">Shop Cart</Link>
                           </li>
                           <li>
-                            <a href="faq.html">FAQ Page</a>
+                            <Link to="shop-checkout.html">Shop Checkout</Link>
                           </li>
                           <li>
-                            <a href="404.html">404 Page</a>
-                          </li>
-                          <li>
-                            <a href="ui-elements.html">UI Elements</a>
-                          </li>
-                          <li>
-                            <a href="dashboard.html">Dashboard</a>
+                            <Link to="shop-order.html">Shop Order</Link>
                           </li>
                         </ul>
                       </li>
                       <li className="has-children">
-                        <a href="javascript:void(0);">Shop</a>
+                        <Link to="javascript:void(0);">Blog</Link>
                         <ul>
                           <li>
-                            <a href="shop-list.html">Shop List</a>
+                            <Link to="blog-list-v1.html">Blog List 01</Link>
                           </li>
                           <li>
-                            <a href="shop-single.html">Shop Single</a>
+                            <Link to="blog-list-v2.html">Blog List 02</Link>
                           </li>
                           <li>
-                            <a href="shop-cart.html">Shop Cart</a>
+                            <Link to="blog-list-v3.html">Blog List 03</Link>
                           </li>
                           <li>
-                            <a href="shop-checkout.html">Shop Checkout</a>
-                          </li>
-                          <li>
-                            <a href="shop-order.html">Shop Order</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li className="has-children">
-                        <a href="javascript:void(0);">Blog</a>
-                        <ul>
-                          <li>
-                            <a href="blog-list-v1.html">Blog List 01</a>
-                          </li>
-                          <li>
-                            <a href="blog-list-v2.html">Blog List 02</a>
-                          </li>
-                          <li>
-                            <a href="blog-list-v3.html">Blog List 03</a>
-                          </li>
-                          <li>
-                            <a href="blog-single.html">Blog Single</a>
+                            <Link to="blog-single.html">Blog Single</Link>
                           </li>
                         </ul>
                       </li>
                       <li>
-                        <a href="contact.html">Contact</a>
+                        <Link to="contact.html">Contact</Link>
                       </li>
                     </ul>
                   </nav>
@@ -194,12 +145,12 @@ const PropertyList = () => {
                       </div>
                     </div>
                     <div className="header-btn">
-                      <a
-                        href="dashboard-add-properties.html"
+                      <Link
+                        to="dashboard-add-properties.html"
                         className="tf-button-default"
                       >
                         Add Listing
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <a className="mobile-nav-toggler mobile-button" href="#menu" />
@@ -214,34 +165,34 @@ const PropertyList = () => {
                     <span>Home</span>
                     <ul>
                       <li>
-                        <a href="index.html">Home Page 01</a>
+                        <Link to="index.html">Home Page 01</Link>
                       </li>
                       <li>
-                        <a href="home-02.html">Home Page 02</a>
+                        <Link to="home-02.html">Home Page 02</Link>
                       </li>
                       <li>
-                        <a href="home-03.html">Home Page 03</a>
+                        <Link to="home-03.html">Home Page 03</Link>
                       </li>
                       <li>
-                        <a href="home-04.html">Home Page 04</a>
+                        <Link to="home-04.html">Home Page 04</Link>
                       </li>
                       <li>
-                        <a href="home-05.html">Home Page 05</a>
+                        <Link to="home-05.html">Home Page 05</Link>
                       </li>
                       <li>
-                        <a href="home-06.html">Home Page 06</a>
+                        <Link to="home-06.html">Home Page 06</Link>
                       </li>
                       <li>
-                        <a href="home-07.html">Home Page 07</a>
+                        <Link to="home-07.html">Home Page 07</Link>
                       </li>
                       <li>
-                        <a href="home-08.html">Home Page 08</a>
+                        <Link to="home-08.html">Home Page 08</Link>
                       </li>
                       <li>
-                        <a href="home-09.html">Home Page 09</a>
+                        <Link to="home-09.html">Home Page 09</Link>
                       </li>
                       <li>
-                        <a href="home-10.html">Home Page 10</a>
+                        <Link to="home-10.html">Home Page 10</Link>
                       </li>
                     </ul>
                   </li>
@@ -252,13 +203,13 @@ const PropertyList = () => {
                         <span>List view</span>
                         <ul>
                           <li className="current">
-                            <a href="property-list-v1.html">Property List 01</a>
+                            <Link to="property-list-v1.html">Property List 01</Link>
                           </li>
                           <li>
-                            <a href="property-list-v2.html">Property List 02</a>
+                            <Link to="property-list-v2.html">Property List 02</Link>
                           </li>
                           <li>
-                            <a href="property-list-v3.html">Property List 03</a>
+                            <Link to="property-list-v3.html">Property List 03</Link>
                           </li>
                         </ul>
                       </li>
@@ -266,16 +217,16 @@ const PropertyList = () => {
                         <span>Grid view</span>
                         <ul>
                           <li>
-                            <a href="property-grid-v1.html">Property Grid 01</a>
+                            <Link to="property-grid-v1.html">Property Grid 01</Link>
                           </li>
                           <li>
-                            <a href="property-grid-v2.html">Property Grid 02</a>
+                            <Link to="property-grid-v2.html">Property Grid 02</Link>
                           </li>
                           <li>
-                            <a href="property-grid-v3.html">Property Grid 03</a>
+                            <Link to="property-grid-v3.html">Property Grid 03</Link>
                           </li>
                           <li>
-                            <a href="property-grid-v4.html">Property Grid 04</a>
+                            <Link to="property-grid-v4.html">Property Grid 04</Link>
                           </li>
                         </ul>
                       </li>
@@ -283,25 +234,25 @@ const PropertyList = () => {
                         <span>Single view</span>
                         <ul>
                           <li>
-                            <a href="property-single-v1.html">Property Single 01</a>
+                            <Link to="property-single-v1.html">Property Single 01</Link>
                           </li>
                           <li>
-                            <a href="property-single-v2.html">Property Single 02</a>
+                            <Link to="property-single-v2.html">Property Single 02</Link>
                           </li>
                           <li>
-                            <a href="property-single-v3.html">Property Single 03</a>
+                            <Link to="property-single-v3.html">Property Single 03</Link>
                           </li>
                           <li>
-                            <a href="property-single-v4.html">Property Single 04</a>
+                            <Link to="property-single-v4.html">Property Single 04</Link>
                           </li>
                           <li>
-                            <a href="property-single-v5.html">Property Single 05</a>
+                            <Link to="property-single-v5.html">Property Single 05</Link>
                           </li>
                           <li>
-                            <a href="property-single-v6.html">Property Single 06</a>
+                            <Link to="property-single-v6.html">Property Single 06</Link>
                           </li>
                           <li>
-                            <a href="property-single-v7.html">Property Single 07</a>
+                            <Link to="property-single-v7.html">Property Single 07</Link>
                           </li>
                         </ul>
                       </li>
@@ -309,16 +260,16 @@ const PropertyList = () => {
                         <span>Map Style</span>
                         <ul>
                           <li>
-                            <a href="property-map-v1.html">Property Map 01</a>
+                            <Link to="property-map-v1.html">Property Map 01</Link>
                           </li>
                           <li>
-                            <a href="property-map-v2.html">Property Map 02</a>
+                            <Link to="property-map-v2.html">Property Map 02</Link>
                           </li>
                           <li>
-                            <a href="property-map-v3.html">Property Map 03</a>
+                            <Link to="property-map-v3.html">Property Map 03</Link>
                           </li>
                           <li>
-                            <a href="property-map-v4.html">Property Map 04</a>
+                            <Link to="property-map-v4.html">Property Map 04</Link>
                           </li>
                         </ul>
                       </li>
@@ -328,16 +279,16 @@ const PropertyList = () => {
                     <span>Realtor</span>
                     <ul>
                       <li>
-                        <a href="agent-list.html">Agent List</a>
+                        <Link to="agent-list.html">Agent List</Link>
                       </li>
                       <li>
-                        <a href="agent-single.html">Agent Single</a>
+                        <Link to="agent-single.html">Agent Single</Link>
                       </li>
                       <li>
-                        <a href="agency-list.html">Agency List</a>
+                        <Link to="agency-list.html">Agency List</Link>
                       </li>
                       <li>
-                        <a href="agency-single.html">Agency Single</a>
+                        <Link to="agency-single.html">Agency Single</Link>
                       </li>
                     </ul>
                   </li>
@@ -345,25 +296,25 @@ const PropertyList = () => {
                     <span>Pages</span>
                     <ul>
                       <li>
-                        <a href="about.html">About Us</a>
+                        <Link to="about.html">About Us</Link>
                       </li>
                       <li>
-                        <a href="compare.html">Compare</a>
+                        <Link to="compare.html">Compare</Link>
                       </li>
                       <li>
-                        <a href="pricing.html">Pricing Packages</a>
+                        <Link to="pricing.html">Pricing Packages</Link>
                       </li>
                       <li>
-                        <a href="faq.html">FAQ Page</a>
+                        <Link to="faq.html">FAQ Page</Link>
                       </li>
                       <li>
-                        <a href="404.html">404 Page</a>
+                        <Link to="404.html">404 Page</Link>
                       </li>
                       <li>
-                        <a href="ui-elements.html">UI Elements</a>
+                        <Link to="ui-elements.html">UI Elements</Link>
                       </li>
                       <li>
-                        <a href="dashboard.html">Dashboard</a>
+                        <Link to="dashboard.html">Dashboard</Link>
                       </li>
                     </ul>
                   </li>
@@ -371,19 +322,19 @@ const PropertyList = () => {
                     <span>Shop</span>
                     <ul>
                       <li>
-                        <a href="shop-list.html">Shop List</a>
+                        <Link to="shop-list.html">Shop List</Link>
                       </li>
                       <li>
-                        <a href="shop-single.html">Shop Single</a>
+                        <Link to="shop-single.html">Shop Single</Link>
                       </li>
                       <li>
-                        <a href="shop-cart.html">Shop Cart</a>
+                        <Link to="shop-cart.html">Shop Cart</Link>
                       </li>
                       <li>
-                        <a href="shop-checkout.html">Shop Checkout</a>
+                        <Link to="shop-checkout.html">Shop Checkout</Link>
                       </li>
                       <li>
-                        <a href="shop-order.html">Shop Order</a>
+                        <Link to="shop-order.html">Shop Order</Link>
                       </li>
                     </ul>
                   </li>
@@ -391,21 +342,21 @@ const PropertyList = () => {
                     <span>Blog</span>
                     <ul>
                       <li>
-                        <a href="blog-list-v1.html">Blog List 01</a>
+                        <Link to="blog-list-v1.html">Blog List 01</Link>
                       </li>
                       <li>
-                        <a href="blog-list-v2.html">Blog List 02</a>
+                        <Link to="blog-list-v2.html">Blog List 02</Link>
                       </li>
                       <li>
-                        <a href="blog-list-v3.html">Blog List 03</a>
+                        <Link to="blog-list-v3.html">Blog List 03</Link>
                       </li>
                       <li>
-                        <a href="blog-single.html">Blog Single</a>
+                        <Link to="blog-single.html">Blog Single</Link>
                       </li>
                     </ul>
                   </li>
                   <li>
-                    <a href="contact.html">Contact</a>
+                    <Link to="contact.html">Contact</Link>
                   </li>
                 </ul>
               </nav>
@@ -422,7 +373,7 @@ const PropertyList = () => {
                         <h2>Real Estate &amp; Homes For Sale</h2>
                         <ul className="breadcrumbs">
                           <li>
-                            <a href="index.html">Home</a>
+                            <Link to="index.html">Home</Link>
                           </li>
                           <li>/</li>
                           <li>Property List</li>
@@ -600,14 +551,14 @@ const PropertyList = () => {
                             </ul>
                           </div>
                         </div>
-                        <a href="#" className="tf-button-other wow fadeInUp">
+                        <Link to="#" className="tf-button-other wow fadeInUp">
                           <div className="icon" />
                           Other Features
-                        </a>
-                        <a href="#" className="tf-button-primary w-full wow fadeInUp">
+                        </Link>
+                        <Link to="#" className="tf-button-primary w-full wow fadeInUp">
                           Search Property
                           <i className="icon-arrow-right-add" />
-                        </a>
+                        </Link>
                       </form>
                     </div>
                     <div className="col-lg-8">
@@ -786,17 +737,17 @@ const PropertyList = () => {
                                   </ul>
                                 </div>
                               </div>
-                              <a href="#" className="tf-button-other wow fadeInUp">
+                              <Link to="#" className="tf-button-other wow fadeInUp">
                                 <div className="icon" />
                                 Other Features
-                              </a>
-                              <a
-                                href="#"
+                              </Link>
+                              <Link
+                                to="#"
                                 className="tf-button-primary w-full wow fadeInUp"
                               >
                                 Search Property
                                 <i className="icon-arrow-right-add" />
-                              </a>
+                              </Link>
                             </div>
                           </div>
                         </form>
@@ -829,12 +780,12 @@ const PropertyList = () => {
                           <div className="box-dream has-border wow fadeInUp">
                             <div className="image">
                               <div className="list-tags">
-                                <a href="#" className="tags-item for-sell">
+                                <Link to="#" className="tags-item for-sell">
                                   FOR RENT
-                                </a>
-                                <a href="#" className="tags-item featured">
+                                </Link>
+                                <Link to="#" className="tags-item featured">
                                   FEATURED
-                                </a>
+                                </Link>
                               </div>
                               <div className="button-heart">
                                 <i className="flaticon-heart-1" />
@@ -886,7 +837,7 @@ const PropertyList = () => {
                             <div className="content">
                               <div className="head">
                                 <div className="title">
-                                  <a href="property-single-v1.html">Archer House</a>
+                                  <Link to="property-single-v1.html">Archer House</Link>
                                 </div>
                                 <div className="price">$815,000</div>
                               </div>
@@ -920,9 +871,9 @@ const PropertyList = () => {
                           >
                             <div className="image">
                               <div className="list-tags">
-                                <a href="#" className="tags-item for-sell">
+                                <Link to="#" className="tags-item for-sell">
                                   FOR SELL
-                                </a>
+                                </Link>
                               </div>
                               <div className="button-heart">
                                 <i className="flaticon-heart-1" />
@@ -974,9 +925,9 @@ const PropertyList = () => {
                             <div className="content">
                               <div className="head">
                                 <div className="title">
-                                  <a href="property-single-v1.html">
+                                  <Link to="property-single-v1.html">
                                     Villa One Hyde Park
-                                  </a>
+                                  </Link>
                                 </div>
                                 <div className="price">$815,000</div>
                               </div>
@@ -1007,9 +958,9 @@ const PropertyList = () => {
                           <div className="box-dream has-border wow fadeInUp">
                             <div className="image">
                               <div className="list-tags">
-                                <a href="#" className="tags-item for-sell">
+                                <Link to="#" className="tags-item for-sell">
                                   FOR SELL
-                                </a>
+                                </Link>
                               </div>
                               <div className="button-heart">
                                 <i className="flaticon-heart-1" />
@@ -1061,9 +1012,9 @@ const PropertyList = () => {
                             <div className="content">
                               <div className="head">
                                 <div className="title">
-                                  <a href="property-single-v1.html">
+                                  <Link to="property-single-v1.html">
                                     Home Pitt Street
-                                  </a>
+                                  </Link>
                                 </div>
                                 <div className="price">$815,000</div>
                               </div>
@@ -1097,9 +1048,9 @@ const PropertyList = () => {
                           >
                             <div className="image">
                               <div className="list-tags">
-                                <a href="#" className="tags-item for-sell">
+                                <Link to="#" className="tags-item for-sell">
                                   FOR SELL
-                                </a>
+                                </Link>
                               </div>
                               <div className="button-heart">
                                 <i className="flaticon-heart-1" />
@@ -1151,7 +1102,7 @@ const PropertyList = () => {
                             <div className="content">
                               <div className="head">
                                 <div className="title">
-                                  <a href="property-single-v1.html">Relaxing Villa</a>
+                                  <Link to="property-single-v1.html">Relaxing Villa</Link>
                                 </div>
                                 <div className="price">$815,000</div>
                               </div>
@@ -1182,12 +1133,12 @@ const PropertyList = () => {
                           <div className="box-dream has-border wow fadeInUp">
                             <div className="image">
                               <div className="list-tags">
-                                <a href="#" className="tags-item for-sell">
+                                <Link to="#" className="tags-item for-sell">
                                   FOR RENT
-                                </a>
-                                <a href="#" className="tags-item featured">
+                                </Link>
+                                <Link to="#" className="tags-item featured">
                                   FEATURED
-                                </a>
+                                </Link>
                               </div>
                               <div className="button-heart">
                                 <i className="flaticon-heart-1" />
@@ -1239,7 +1190,7 @@ const PropertyList = () => {
                             <div className="content">
                               <div className="head">
                                 <div className="title">
-                                  <a href="property-single-v1.html">Archer House</a>
+                                  <Link to="property-single-v1.html">Archer House</Link>
                                 </div>
                                 <div className="price">$815,000</div>
                               </div>
@@ -1273,9 +1224,9 @@ const PropertyList = () => {
                           >
                             <div className="image">
                               <div className="list-tags">
-                                <a href="#" className="tags-item for-sell">
+                                <Link to="#" className="tags-item for-sell">
                                   FOR SELL
-                                </a>
+                                </Link>
                               </div>
                               <div className="button-heart">
                                 <i className="flaticon-heart-1" />
@@ -1327,9 +1278,9 @@ const PropertyList = () => {
                             <div className="content">
                               <div className="head">
                                 <div className="title">
-                                  <a href="property-single-v1.html">
+                                  <Link to="property-single-v1.html">
                                     Villa One Hyde Park
-                                  </a>
+                                  </Link>
                                 </div>
                                 <div className="price">$815,000</div>
                               </div>
@@ -1360,9 +1311,9 @@ const PropertyList = () => {
                           <div className="box-dream has-border wow fadeInUp">
                             <div className="image">
                               <div className="list-tags">
-                                <a href="#" className="tags-item for-sell">
+                                <Link to="#" className="tags-item for-sell">
                                   FOR SELL
-                                </a>
+                                </Link>
                               </div>
                               <div className="button-heart">
                                 <i className="flaticon-heart-1" />
@@ -1414,9 +1365,9 @@ const PropertyList = () => {
                             <div className="content">
                               <div className="head">
                                 <div className="title">
-                                  <a href="property-single-v1.html">
+                                  <Link to="property-single-v1.html">
                                     Home Pitt Street
-                                  </a>
+                                  </Link>
                                 </div>
                                 <div className="price">$815,000</div>
                               </div>
@@ -1450,9 +1401,9 @@ const PropertyList = () => {
                           >
                             <div className="image">
                               <div className="list-tags">
-                                <a href="#" className="tags-item for-sell">
+                                <Link to="#" className="tags-item for-sell">
                                   FOR SELL
-                                </a>
+                                </Link>
                               </div>
                               <div className="button-heart">
                                 <i className="flaticon-heart-1" />
@@ -1504,7 +1455,7 @@ const PropertyList = () => {
                             <div className="content">
                               <div className="head">
                                 <div className="title">
-                                  <a href="property-single-v1.html">Relaxing Villa</a>
+                                  <Link to="property-single-v1.html">Relaxing Villa</Link>
                                 </div>
                                 <div className="price">$815,000</div>
                               </div>
@@ -1536,32 +1487,32 @@ const PropertyList = () => {
                         <div className="col-12">
                           <ul className="wg-pagination justify-center wow fadeInUp">
                             <li>
-                              <a href="#">
+                              <Link to="#">
                                 <i className="icon-keyboard_arrow_left" />
-                              </a>
+                              </Link>
                             </li>
                             <li>
-                              <a href="#">1</a>
+                              <Link to="#">1</Link>
                             </li>
                             <li className="active">
-                              <a href="#">2</a>
+                              <Link to="#">2</Link>
                             </li>
                             <li>
-                              <a href="#">3</a>
+                              <Link to="#">3</Link>
                             </li>
                             <li>
-                              <a href="#">4</a>
+                              <Link to="#">4</Link>
                             </li>
                             <li>
-                              <a href="#">...</a>
+                              <Link to="#">...</Link>
                             </li>
                             <li>
-                              <a href="#">20</a>
+                              <Link to="#">20</Link>
                             </li>
                             <li>
-                              <a href="#">
+                              <Link to="#">
                                 <i className="icon-keyboard_arrow_right" />
-                              </a>
+                              </Link>
                             </li>
                           </ul>
                         </div>
@@ -1600,9 +1551,9 @@ const PropertyList = () => {
         <div className="modal fade modalCenter" id="modallogin">
           <div className="modal-dialog modal-dialog-centered" role="document">
             <div className="modal-content modal-sm">
-              <a href="#" className="btn-hide-modal" data-bs-dismiss="modal">
+              <Link to="#" className="btn-hide-modal" data-bs-dismiss="modal">
                 <i className="icon-close" />
-              </a>
+              </Link>
               <div className="image-left">
                 <img src="images/section/login.jpg" alt="" />
                 <h3>Welcome to Your Real Estate Website</h3>
@@ -1642,9 +1593,9 @@ const PropertyList = () => {
                         <span className="btn-checkbox" />
                       </label>
                     </div>
-                    <a href="#" className="lost-password">
+                    <Link to="#" className="lost-password">
                       Lost your password?
-                    </a>
+                    </Link>
                   </div>
                   <div className="button-submit w-full">
                     <button className="tf-button-primary w-full" type="submit">
@@ -1655,31 +1606,31 @@ const PropertyList = () => {
                 </form>
                 <div className="flex items-center justify-center">
                   <p>Not a member?</p>
-                  <a
-                    href="#"
+                  <Link
+                    to="#"
                     className="btn-show-register"
                     data-bs-dismiss="modal"
                     data-bs-toggle="modal"
                     data-bs-target="#modalregister"
                   >
                     Register here
-                  </a>
+                  </Link>
                 </div>
                 <ul className="wg-social-1">
                   <li>
-                    <a href="#">
+                    <Link to="#">
                       <i className="flaticon-google" />
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">
+                    <Link to="#">
                       <i className="flaticon-twitter" />
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">
+                    <Link to="#">
                       <i className="flaticon-facebook" />
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -1691,9 +1642,9 @@ const PropertyList = () => {
         <div className="modal fade modalCenter" id="modalregister">
           <div className="modal-dialog modal-dialog-centered" role="document">
             <div className="modal-content modal-sm">
-              <a href="#" className="btn-hide-modal" data-bs-dismiss="modal">
+              <Link to="#" className="btn-hide-modal" data-bs-dismiss="modal">
                 <i className="icon-close" />
-              </a>
+              </Link>
               <div className="image-left">
                 <img src="images/section/login.jpg" alt="" />
                 <h3>Welcome to Your Real Estate Website</h3>
@@ -1767,15 +1718,15 @@ const PropertyList = () => {
                 </form>
                 <div className="flex items-center justify-center">
                   <p>Have an account?</p>
-                  <a
-                    href="#"
+                  <Link
+                    to="#"
                     className="btn-show-register"
                     data-bs-dismiss="modal"
                     data-bs-toggle="modal"
                     data-bs-target="#modallogin"
                   >
                     Log in
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
